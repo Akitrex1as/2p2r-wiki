@@ -1,0 +1,4110 @@
+{
+ "groups": {
+  "space": "Космос",
+  "pollution": "Забруднення",
+  "progress": "Прогрес і скрипти",
+  "content": "Предмети й виживання",
+  "world": "Світ і моби",
+  "ui": "Інтерфейс",
+  "visual": "Графіка й звук",
+  "platform": "Платформа й патчі",
+  "lib": "Бібліотеки"
+ },
+ "nodes": [
+  {
+   "id": "+Fugue-0.25.5.jar",
+   "name": "Fugue",
+   "group": "platform",
+   "role": "Патчі старих модів для Cleanroom",
+   "mb": 0.3,
+   "cat": "tech"
+  },
+  {
+   "id": "-BetterConfig-1.12.2-1.3.0.jar",
+   "name": "BetterConfig",
+   "group": "platform",
+   "role": "Покращений екран налаштувань",
+   "mb": 0.2,
+   "cat": "tech"
+  },
+  {
+   "id": "-configanytime-3.0.jar",
+   "name": "ConfigAnytime",
+   "group": "platform",
+   "role": "Бібліотека налаштувань; Cleanroom має власну вбудовану версію",
+   "mb": 0.0,
+   "cat": "lib"
+  },
+  {
+   "id": "-mixinbooter-12.4.jar",
+   "name": "MixinBooter",
+   "group": "platform",
+   "role": "Завантажувач міксинів; Cleanroom має власну вбудовану версію",
+   "mb": 2.4,
+   "cat": "lib"
+  },
+  {
+   "id": "2P2Rcompat-1.0.0.jar",
+   "name": "2P2Rcompat",
+   "group": "space",
+   "role": "Мод збірки: виправлення й механіки — горіння газів, далекі зорі, ролі супутників, рейки на схилах, світіння, скіни гравців, картинки на табличках і продуктивність",
+   "mb": 0.1,
+   "cat": "main"
+  },
+  {
+   "id": "AdChimneys-1.12.2-3.5.16.0-build.0654.jar",
+   "name": "Advanced Chimneys",
+   "group": "pollution",
+   "role": "Димарі, що виводять дим у повітря",
+   "mb": 0.2,
+   "cat": "main"
+  },
+  {
+   "id": "AdPother-1.12.2-1.2.25.0-build.0673.jar",
+   "name": "Pollution of the Realms",
+   "group": "pollution",
+   "role": "Механіка забруднення: дим, фільтри, респіратори",
+   "mb": 0.6,
+   "cat": "main"
+  },
+  {
+   "id": "AmbientEnvironment_1.12.2_1.0.2.jar",
+   "name": "Ambient Environment",
+   "group": "visual",
+   "role": "Більше атмосфери у світі",
+   "mb": 0.0,
+   "cat": "qol"
+  },
+  {
+   "id": "antiqueatlas-1.12.2-4.6.3.jar",
+   "name": "Antique Atlas",
+   "group": "ui",
+   "role": "Атлас-карта як предмет",
+   "mb": 1.2,
+   "cat": "qol"
+  },
+  {
+   "id": "AntiqueAtlasAutoMarker-1.6.1.4.jar",
+   "name": "AntiqueAtlasAutoMarker",
+   "group": "ui",
+   "role": "Автоматичні мітки споруд в атласі",
+   "mb": 2.6,
+   "cat": "qol"
+  },
+  {
+   "id": "AquaAcrobatics-1.15.4.jar",
+   "name": "Aqua Acrobatics",
+   "group": "world",
+   "role": "Плавання й повзання з нових версій",
+   "mb": 0.2,
+   "cat": "world"
+  },
+  {
+   "id": "AquaCreepers-1.2.3.jar",
+   "name": "Aqua Creepers",
+   "group": "world",
+   "role": "Водяні кріпери у відкритому морі",
+   "mb": 0.2,
+   "cat": "world"
+  },
+  {
+   "id": "AsmodeusCore-1.12.2-1.0.2.jar",
+   "name": "AsmodeusCore",
+   "group": "space",
+   "role": "Спільне ядро GalaxySpace: генератор світів, туман, бурі",
+   "mb": 4.0,
+   "cat": "lib"
+  },
+  {
+   "id": "AtlasExtras-1.12.2-1.8.jar",
+   "name": "Atlas Extras",
+   "group": "ui",
+   "role": "Додаткові можливості атласу",
+   "mb": 0.1,
+   "cat": "qol"
+  },
+  {
+   "id": "AutoRegLib-1.12.2-1.3-32.jar",
+   "name": "AutoRegLib",
+   "group": "lib",
+   "role": "Бібліотека Quark",
+   "mb": 0.1,
+   "cat": "lib"
+  },
+  {
+   "id": "BadMobs-1.12.2-1.1.40.jar",
+   "name": "Bad Mobs",
+   "group": "world",
+   "role": "Вимикає небажаних мобів",
+   "mb": 0.0,
+   "cat": "world"
+  },
+  {
+   "id": "base-1.12.2-3.14.0.jar",
+   "name": "B.A.S.E",
+   "group": "lib",
+   "role": "Бібліотека ContentTweaker",
+   "mb": 0.7,
+   "cat": "lib"
+  },
+  {
+   "id": "betterchat-1.4.jar",
+   "name": "Better Chat",
+   "group": "ui",
+   "role": "Плавний чат із прозорим фоном",
+   "mb": 0.0,
+   "cat": "qol"
+  },
+  {
+   "id": "betterendcities-1.2.0-forge-1.12.2.jar",
+   "name": "Better End Cities",
+   "group": "world",
+   "role": "Перебудовані міста Енду",
+   "mb": 0.0,
+   "cat": "world"
+  },
+  {
+   "id": "betterinvisibility-1.12.2-1.0.5.jar",
+   "name": "Better Invisibility",
+   "group": "visual",
+   "role": "Чистіший ефект невидимості",
+   "mb": 0.1,
+   "cat": "qol"
+  },
+  {
+   "id": "bettermonuments-1.2.0-forge-1.12.2.jar",
+   "name": "Better Monuments",
+   "group": "world",
+   "role": "Перебудовані океанські монументи",
+   "mb": 0.0,
+   "cat": "world"
+  },
+  {
+   "id": "BiomeSpecificDungeons-1.12.2-1.0.3.jar",
+   "name": "Biome Specific Dungeons",
+   "group": "world",
+   "role": "Підземелля залежно від біому",
+   "mb": 0.0,
+   "cat": "world"
+  },
+  {
+   "id": "BNBGamingCore-1.12.2-0.12.0.jar",
+   "name": "BNBGamingCore",
+   "group": "platform",
+   "role": "Системна частина модів BNBGaming",
+   "mb": 0.1,
+   "cat": "lib"
+  },
+  {
+   "id": "BNBGamingLib-1.12.2-2.17.6.jar",
+   "name": "BNBGamingLib",
+   "group": "lib",
+   "role": "Бібліотека Triumph",
+   "mb": 0.1,
+   "cat": "lib"
+  },
+  {
+   "id": "boatmobs-1.12.2-1.1.jar",
+   "name": "Boat Mobs",
+   "group": "world",
+   "role": "Ворожі моби користуються човнами",
+   "mb": 0.1,
+   "cat": "world"
+  },
+  {
+   "id": "Bookshelf-1.12.2-2.3.590.jar",
+   "name": "Bookshelf",
+   "group": "lib",
+   "role": "Бібліотека модів Darkhax",
+   "mb": 0.3,
+   "cat": "lib"
+  },
+  {
+   "id": "Bountiful-1.12.2-2.2.3.jar",
+   "name": "Bountiful",
+   "group": "progress",
+   "role": "Дошка замовлень із нагородами",
+   "mb": 0.2,
+   "cat": "world"
+  },
+  {
+   "id": "brokenwings-3.0.0.jar",
+   "name": "Broken Wings",
+   "group": "content",
+   "role": "Політ на елітрах лише у Верхньому світі та в Енді",
+   "mb": 0.0,
+   "cat": "world"
+  },
+  {
+   "id": "bubble_columns_backport-1.0.7.jar",
+   "name": "Bubble Columns Backport",
+   "group": "world",
+   "role": "Стовпи бульбашок із нових версій",
+   "mb": 0.0,
+   "cat": "world"
+  },
+  {
+   "id": "celeritasdynamiclights-1.2.11.jar",
+   "name": "Celeritas Dynamic Lights",
+   "group": "visual",
+   "role": "Динамічне світло від предметів у руці",
+   "mb": 1.0,
+   "cat": "qol"
+  },
+  {
+   "id": "celeritasextra-0.11.3-beta.jar",
+   "name": "Celeritas Extra",
+   "group": "visual",
+   "role": "Додаткові налаштування графіки для Nothirium",
+   "mb": 0.4,
+   "cat": "qol"
+  },
+  {
+   "id": "Charm-1.12.2-1.4.1.jar",
+   "name": "Charm",
+   "group": "content",
+   "role": "Дрібні покращення виживання",
+   "mb": 2.3,
+   "cat": "main"
+  },
+  {
+   "id": "chat_heads-0.1.3.jar",
+   "name": "Chat Heads Vintage",
+   "group": "ui",
+   "role": "Голови гравців у чаті",
+   "mb": 0.1,
+   "cat": "qol"
+  },
+  {
+   "id": "chibi-5.34.jar",
+   "name": "Chibi",
+   "group": "platform",
+   "role": "Оптимізація пам’яті та виправлення аварій (колишній LoliASM), замінив FermiumASM",
+   "mb": 1.7,
+   "cat": "tech"
+  },
+  {
+   "id": "cit_recrafted-0.1.0.jar",
+   "name": "CIT Recrafted",
+   "group": "visual",
+   "role": "Вигляд предмета залежно від назви",
+   "mb": 0.0,
+   "cat": "qol"
+  },
+  {
+   "id": "collective-1.12.2-3.0.jar",
+   "name": "Collective",
+   "group": "lib",
+   "role": "Бібліотека модів Serilum",
+   "mb": 0.1,
+   "cat": "lib"
+  },
+  {
+   "id": "CollisionDamage-1.2.2.jar",
+   "name": "CollisionDamage",
+   "group": "content",
+   "role": "Шкода від зіткнень",
+   "mb": 0.3,
+   "cat": "world"
+  },
+  {
+   "id": "ContentTweaker-1.12.2-4.10.0.jar",
+   "name": "ContentTweaker",
+   "group": "progress",
+   "role": "Власні блоки й предмети зі скриптів",
+   "mb": 0.3,
+   "cat": "tech"
+  },
+  {
+   "id": "cosmeticbeds-1.12.2-1.0.2.2.jar",
+   "name": "Cosmetic Beds",
+   "group": "content",
+   "role": "Візерунки прапорів на ліжках",
+   "mb": 0.1,
+   "cat": "qol"
+  },
+  {
+   "id": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "name": "CraftTweaker2",
+   "group": "progress",
+   "role": "Скрипти рецептів, подій і нагород",
+   "mb": 1.5,
+   "cat": "tech"
+  },
+  {
+   "id": "CreativeCore_v1.10.71_mc1.12.2.jar",
+   "name": "CreativeCore",
+   "group": "lib",
+   "role": "Бібліотека модів CreativeMD",
+   "mb": 1.3,
+   "cat": "lib"
+  },
+  {
+   "id": "CTM-MC1.12.2-1.0.2.31.jar",
+   "name": "CTM",
+   "group": "visual",
+   "role": "З'єднані й світні текстури",
+   "mb": 0.2,
+   "cat": "qol"
+  },
+  {
+   "id": "CustomLoadingScreen-1.12.2-1.5.9.jar",
+   "name": "Custom Loading Screen",
+   "group": "ui",
+   "role": "Власний екран завантаження",
+   "mb": 0.9,
+   "cat": "qol"
+  },
+  {
+   "id": "darkness-forge-1.12.x-0.5.0.jar",
+   "name": "Darkness",
+   "group": "visual",
+   "role": "Справжня темрява й місячне світло",
+   "mb": 0.0,
+   "cat": "world"
+  },
+  {
+   "id": "datarium-0.6.1.jar",
+   "name": "Datarium",
+   "group": "visual",
+   "role": "Світні текстури для ресурспаків",
+   "mb": 1.1,
+   "cat": "lib"
+  },
+  {
+   "id": "despawningspawners-1.12-1.2.0-2.jar",
+   "name": "Despawning Spawners",
+   "group": "world",
+   "role": "Спавнери вичерпуються",
+   "mb": 0.0,
+   "cat": "world"
+  },
+  {
+   "id": "DynamicSurroundings-1.12.2-3.6.3.jar",
+   "name": "Dynamic Surroundings",
+   "group": "visual",
+   "role": "Погода, туман, звуки й ефекти",
+   "mb": 15.0,
+   "cat": "qol"
+  },
+  {
+   "id": "EnhancedVisuals_v1.4.4_mc1.12.2.jar",
+   "name": "Enhanced Visuals",
+   "group": "visual",
+   "role": "Візуальні ефекти поранень і стану",
+   "mb": 4.5,
+   "cat": "qol"
+  },
+  {
+   "id": "EntityCulling-1.12.2-6.5.0.jar",
+   "name": "EntityCulling",
+   "group": "visual",
+   "role": "Не малює невидимі сутності",
+   "mb": 0.1,
+   "cat": "tech"
+  },
+  {
+   "id": "EyesInTheDarkness-0.1.0.jar",
+   "name": "Eyes in the Darkness",
+   "group": "world",
+   "role": "Очі, що стежать у темряві",
+   "mb": 0.2,
+   "cat": "world"
+  },
+  {
+   "id": "FermiumMixins-1.0.15.jar",
+   "name": "FermiumMixins",
+   "group": "platform",
+   "role": "Виправлення гри й багатьох модів",
+   "mb": 0.8,
+   "cat": "tech"
+  },
+  {
+   "id": "flare-0.9.0.jar",
+   "name": "Flare",
+   "group": "platform",
+   "role": "Профайлер продуктивності",
+   "mb": 2.5,
+   "cat": "tech"
+  },
+  {
+   "id": "Fluidlogged-API-v3.3.3-mc1.12.2.jar",
+   "name": "Fluidlogged API",
+   "group": "world",
+   "role": "Блоки можуть містити воду й інші рідини",
+   "mb": 0.8,
+   "cat": "lib"
+  },
+  {
+   "id": "ForgeEndertech-1.12.2-4.5.6.1-build.0648.jar",
+   "name": "Forge Endertech",
+   "group": "lib",
+   "role": "Бібліотека модів забруднення",
+   "mb": 0.9,
+   "cat": "lib"
+  },
+  {
+   "id": "Forgelin-Continuous-2.4.20.0.jar",
+   "name": "Forgelin-Continuous",
+   "group": "platform",
+   "role": "Мова Kotlin для модів",
+   "mb": 7.6,
+   "cat": "lib"
+  },
+  {
+   "id": "FpsReducer-mc1.12.2-1.20.jar",
+   "name": "FPS Reducer",
+   "group": "visual",
+   "role": "Знижує FPS у простої",
+   "mb": 0.1,
+   "cat": "tech"
+  },
+  {
+   "id": "friendly_chests_nofluid-1.0.2.jar",
+   "name": "Friendly Chests",
+   "group": "content",
+   "role": "З'єднання скринь між собою",
+   "mb": 0.0,
+   "cat": "qol"
+  },
+  {
+   "id": "funtnt-1.12.2.0.jar",
+   "name": "Fun TNT",
+   "group": "content",
+   "role": "Динаміт рівнів 2–128 і ядерна бомба",
+   "mb": 0.0,
+   "cat": "world"
+  },
+  {
+   "id": "Future-MC-0.2.21.jar",
+   "name": "Future MC",
+   "group": "content",
+   "role": "Блоки й механіки з новіших версій",
+   "mb": 19.0,
+   "cat": "main"
+  },
+  {
+   "id": "Galacticraft-1.12.2-4.0.6.jar",
+   "name": "Galacticraft",
+   "group": "space",
+   "role": "Основа космосу: ракети, кисень, Місяць, Марс, Венера, астероїди",
+   "mb": 14.9,
+   "cat": "main"
+  },
+  {
+   "id": "GalacticraftTweaker-1.12.2-1.0.3.jar",
+   "name": "Galacticraft Tweaker",
+   "group": "space",
+   "role": "Дає скриптам доступ до рецептів і луту Galacticraft",
+   "mb": 0.0,
+   "cat": "tech"
+  },
+  {
+   "id": "GalacticResearch-1.1.3.jar",
+   "name": "Galactic Research",
+   "group": "space",
+   "role": "Телескоп, дослідження й місії, що відкривають небесні тіла",
+   "mb": 0.8,
+   "cat": "main"
+  },
+  {
+   "id": "GalacticTweaks-1.8.0.jar",
+   "name": "GalacticTweaks",
+   "group": "space",
+   "role": "Налаштування й виправлення для модів Galacticraft",
+   "mb": 0.5,
+   "cat": "tech"
+  },
+  {
+   "id": "GalaxySpace-1.12.2-2.1.4.jar",
+   "name": "GalaxySpace",
+   "group": "space",
+   "role": "Нові планети, ракети 4–6 рівнів, машини й скафандри",
+   "mb": 9.7,
+   "cat": "main"
+  },
+  {
+   "id": "GameStages-1.12.2-2.0.123.jar",
+   "name": "Game Stages",
+   "group": "progress",
+   "role": "Етапи прогресу гравця",
+   "mb": 0.1,
+   "cat": "tech"
+  },
+  {
+   "id": "Hwyla-1.8.26-B41_1.12.2.jar",
+   "name": "Hwyla",
+   "group": "ui",
+   "role": "Підказка про блок перед поглядом",
+   "mb": 0.4,
+   "cat": "qol"
+  },
+  {
+   "id": "itlt-1.12.x-1.0.4.jar",
+   "name": "It's the Little Things",
+   "group": "ui",
+   "role": "Дрібниці для авторів збірок",
+   "mb": 0.0,
+   "cat": "tech"
+  },
+  {
+   "id": "jei_1.12.2-4.24.0.1043.jar",
+   "name": "Just Enough Items",
+   "group": "ui",
+   "role": "Перегляд рецептів",
+   "mb": 0.7,
+   "cat": "qol"
+  },
+  {
+   "id": "jepb-1.12-1.2.1.jar",
+   "name": "Just Enough Pattern Banners",
+   "group": "ui",
+   "role": "Рецепти прапорів у JEI",
+   "mb": 0.0,
+   "cat": "qol"
+  },
+  {
+   "id": "JustEnoughResources-1.12.2-0.9.3.203.jar",
+   "name": "Just Enough Resources",
+   "group": "ui",
+   "role": "Ресурси й здобич мобів у JEI",
+   "mb": 0.2,
+   "cat": "qol"
+  },
+  {
+   "id": "keywizard-1.12.2-1.7.3.jar",
+   "name": "Keyboard Wizard",
+   "group": "ui",
+   "role": "Пошук конфліктів клавіш",
+   "mb": 0.0,
+   "cat": "qol"
+  },
+  {
+   "id": "legacy-advdebug-2.3.0.jar",
+   "name": "Legacy AdvDebug",
+   "group": "platform",
+   "role": "Налагодження досягнень",
+   "mb": 0.0,
+   "cat": "tech"
+  },
+  {
+   "id": "Loading-Progress-Bar-v1.0-mc[1.8-1.12.2].jar",
+   "name": "Loading Progress Bar",
+   "group": "ui",
+   "role": "Смуга завантаження світу",
+   "mb": 0.0,
+   "cat": "qol"
+  },
+  {
+   "id": "Localizator-1.12.2-1.0.15.jar",
+   "name": "Localizator",
+   "group": "ui",
+   "role": "Локалізація текстів інших модів",
+   "mb": 2.3,
+   "cat": "tech"
+  },
+  {
+   "id": "LootTweaker-0.5.1+MC1.12.2-DLS0.jar",
+   "name": "LootTweaker",
+   "group": "progress",
+   "role": "Зміна таблиць луту зі скриптів",
+   "mb": 0.1,
+   "cat": "tech"
+  },
+  {
+   "id": "MTLib-3.0.7.jar",
+   "name": "MTLib",
+   "group": "lib",
+   "role": "Бібліотека для рідних скриптових модів",
+   "mb": 0.0,
+   "cat": "lib"
+  },
+  {
+   "id": "namepain-1.5.0 forge-1.12.x.jar",
+   "name": "Name Pain",
+   "group": "ui",
+   "role": "Колір імен залежить від здоров'я",
+   "mb": 0.0,
+   "cat": "qol"
+  },
+  {
+   "id": "naughthirium-3.0.0.jar",
+   "name": "Naughthirium",
+   "group": "platform",
+   "role": "Латки сумісності Nothirium з іншими модами",
+   "mb": 0.1,
+   "cat": "tech"
+  },
+  {
+   "id": "Nether-API-v1.5.4-mc1.12.2.jar",
+   "name": "Nether-API-v1",
+   "group": "world",
+   "role": "Основа незерських і ендерських біомів",
+   "mb": 0.5,
+   "cat": "lib"
+  },
+  {
+   "id": "netherportalspread_1.12.2-5.4.jar",
+   "name": "Nether Portal Spread",
+   "group": "world",
+   "role": "Незер поширюється навколо порталів",
+   "mb": 0.0,
+   "cat": "world"
+  },
+  {
+   "id": "Nothirium-1.12.2-0.4.9-beta.jar",
+   "name": "Nothirium",
+   "group": "visual",
+   "role": "Рушій рендерингу чанків замість ванільного",
+   "mb": 0.2,
+   "cat": "tech"
+  },
+  {
+   "id": "OreLib-1.12.2-3.6.0.1.jar",
+   "name": "OreLib Support Mod",
+   "group": "lib",
+   "role": "Бібліотека Dynamic Surroundings",
+   "mb": 0.3,
+   "cat": "lib"
+  },
+  {
+   "id": "OreStages-1.12.2-2.0.38.jar",
+   "name": "Ore Stages",
+   "group": "progress",
+   "role": "Ховає руди до потрібного етапу (поки не налаштовано)",
+   "mb": 0.0,
+   "cat": "tech"
+  },
+  {
+   "id": "outfox-0.1.5-mc1.12.2.jar",
+   "name": "outfox",
+   "group": "world",
+   "role": "Лисиці",
+   "mb": 0.2,
+   "cat": "world"
+  },
+  {
+   "id": "particleculling-1.12.2-v1.4.3.jar",
+   "name": "Particle Culling",
+   "group": "visual",
+   "role": "Не малює частинки поза поглядом",
+   "mb": 0.0,
+   "cat": "tech"
+  },
+  {
+   "id": "Patchouli-1.0-23.6.jar",
+   "name": "Patchouli",
+   "group": "ui",
+   "role": "Книги-посібники в грі",
+   "mb": 0.5,
+   "cat": "qol"
+  },
+  {
+   "id": "pollutantpump-1.12.2-1.3.0.jar",
+   "name": "Pollutant Pump",
+   "group": "pollution",
+   "role": "Насос, що відкачує забруднення",
+   "mb": 0.1,
+   "cat": "main"
+  },
+  {
+   "id": "portalsupercache-0.2.jar",
+   "name": "Portal Super Cache",
+   "group": "visual",
+   "role": "Швидші портали Незеру",
+   "mb": 0.0,
+   "cat": "tech"
+  },
+  {
+   "id": "pulsar-0.6.7-beta.jar",
+   "name": "Pulsar Lighting Engine",
+   "group": "visual",
+   "role": "Рушій освітлення з кольоровим світлом",
+   "mb": 0.6,
+   "cat": "tech"
+  },
+  {
+   "id": "Quark-r1.6-179.jar",
+   "name": "Quark",
+   "group": "content",
+   "role": "Сотні дрібних блоків, предметів і механік",
+   "mb": 3.7,
+   "cat": "main"
+  },
+  {
+   "id": "QuarkOddities-1.12.2.jar",
+   "name": "QuarkOddities",
+   "group": "content",
+   "role": "Дивні предмети Quark, зокрема рюкзак",
+   "mb": 0.0,
+   "cat": "main"
+  },
+  {
+   "id": "ReachFix-1.12.2-1.1.3.jar",
+   "name": "Reach Fix",
+   "group": "platform",
+   "role": "Виправляє дальність дії",
+   "mb": 0.1,
+   "cat": "tech"
+  },
+  {
+   "id": "RecipeStages-1.1.3.8.jar",
+   "name": "RecipeStages",
+   "group": "progress",
+   "role": "Рецепти з матеріалів планет відкриваються висадкою",
+   "mb": 0.0,
+   "cat": "tech"
+  },
+  {
+   "id": "Redstone++ ver1.3e.jar",
+   "name": "Redstone++",
+   "group": "content",
+   "role": "Нові редстоун-механізми",
+   "mb": 0.5,
+   "cat": "world"
+  },
+  {
+   "id": "Regrowth-1.12.2-0.0.1.1.jar",
+   "name": "Regrowth",
+   "group": "world",
+   "role": "Природа відновлюється сама",
+   "mb": 0.1,
+   "cat": "world"
+  },
+  {
+   "id": "RenderLib-1.12.2-1.4.5.jar",
+   "name": "RenderLib",
+   "group": "visual",
+   "role": "Основа оптимізацій рендерингу",
+   "mb": 0.3,
+   "cat": "lib"
+  },
+  {
+   "id": "ResourceLoader-MC1.12.1-1.5.3.jar",
+   "name": "Resource Loader",
+   "group": "ui",
+   "role": "Завантажує теку resources збірки",
+   "mb": 0.0,
+   "cat": "tech"
+  },
+  {
+   "id": "Rex's-AdditionalStructures-1.12.x(v.2.5.0).jar",
+   "name": "Rex's Additional Structures",
+   "group": "world",
+   "role": "Додаткові споруди у світі",
+   "mb": 0.8,
+   "cat": "world"
+  },
+  {
+   "id": "rockytweaks-1.12.2-0.6.1.jar",
+   "name": "RockyTweaks",
+   "group": "progress",
+   "role": "Скриптове керування ковадлом",
+   "mb": 0.0,
+   "cat": "tech"
+  },
+  {
+   "id": "Scalar Legacy-1.0.1.jar",
+   "name": "Scalar Legacy",
+   "group": "platform",
+   "role": "Мова Scala; без цього мода збірка не запускається",
+   "mb": 24.3,
+   "cat": "lib"
+  },
+  {
+   "id": "scarper-1.1.jar",
+   "name": "Scarper",
+   "group": "world",
+   "role": "Моби втікають після атаки",
+   "mb": 0.0,
+   "cat": "world"
+  },
+  {
+   "id": "screenshot_viewer-1.1.1-forge-mc1.12.2.jar",
+   "name": "Screenshot Viewer",
+   "group": "ui",
+   "role": "Перегляд скриншотів у грі",
+   "mb": 0.1,
+   "cat": "qol"
+  },
+  {
+   "id": "ShieldBreak-1.2.3.jar",
+   "name": "ShieldBreak",
+   "group": "content",
+   "role": "Щити ламаються й мають обмеження",
+   "mb": 0.1,
+   "cat": "world"
+  },
+  {
+   "id": "SignPicture-1.12.1-2.8.1-universal.jar",
+   "name": "SignPicture",
+   "group": "ui",
+   "role": "Картинки на табличках",
+   "mb": 1.0,
+   "cat": "qol"
+  },
+  {
+   "id": "SmoothWater-0.1.4.jar",
+   "name": "SmoothWater",
+   "group": "visual",
+   "role": "Плавна вода",
+   "mb": 0.0,
+   "cat": "qol"
+  },
+  {
+   "id": "SnowRealMagic-1.12.2-0.7.4.jar",
+   "name": "Snow! Real Magic!",
+   "group": "world",
+   "role": "Природніша поведінка снігу",
+   "mb": 0.9,
+   "cat": "world"
+  },
+  {
+   "id": "SoundFilters-0.14.0_for_1.12.jar",
+   "name": "Sound Filters",
+   "group": "visual",
+   "role": "Відлуння в печерах і глушіння звуку",
+   "mb": 0.0,
+   "cat": "qol"
+  },
+  {
+   "id": "SpaceAmbient-1.12.2-0.0.1.jar",
+   "name": "SpaceAmbient",
+   "group": "space",
+   "role": "Космічна атмосфера й звуки",
+   "mb": 30.0,
+   "cat": "qol"
+  },
+  {
+   "id": "Spacesuit Required 1.0.2 1.12.2 Forge.jar",
+   "name": "Spacesuit Required",
+   "group": "space",
+   "role": "Без скафандра в безповітряному космосі не вижити",
+   "mb": 0.2,
+   "cat": "main"
+  },
+  {
+   "id": "specialai_1.1.0_for_mc1.12.2.jar",
+   "name": "Special AI",
+   "group": "world",
+   "role": "Розумніші моби й захист сіл",
+   "mb": 0.2,
+   "cat": "world"
+  },
+  {
+   "id": "squidnoglitch-mc1.12.2-v1.0.0.jar",
+   "name": "squidnoglitch-mc1",
+   "group": "world",
+   "role": "Виправляє поведінку кальмарів",
+   "mb": 0.1,
+   "cat": "world"
+  },
+  {
+   "id": "stacksize-1.12.2-1.0.jar",
+   "name": "Stacksize",
+   "group": "content",
+   "role": "Феєрверки складаються лише по 3",
+   "mb": 0.0,
+   "cat": "world"
+  },
+  {
+   "id": "Super+Hot+1.1.jar",
+   "name": "SuperHot",
+   "group": "content",
+   "role": "Смолоскипи обпікають",
+   "mb": 0.1,
+   "cat": "world"
+  },
+  {
+   "id": "tabulator-1.0.3.jar",
+   "name": "Tabulaor",
+   "group": "progress",
+   "role": "Приховує вкладки й предмети",
+   "mb": 0.0,
+   "cat": "tech"
+  },
+  {
+   "id": "Tips-1.12.2-1.0.9.jar",
+   "name": "Tips",
+   "group": "ui",
+   "role": "Поради на екранах завантаження",
+   "mb": 0.0,
+   "cat": "qol"
+  },
+  {
+   "id": "tonistructures-1.2.0+forge-1.12.2.jar",
+   "name": "TONI's Structure Lib",
+   "group": "lib",
+   "role": "Рушій споруд Toni_Carter",
+   "mb": 0.1,
+   "cat": "lib"
+  },
+  {
+   "id": "TradeStages Legacy-1.1.2.jar",
+   "name": "TradeStages Legacy",
+   "group": "progress",
+   "role": "Торгівля селян за етапами (поки не налаштовано)",
+   "mb": 0.0,
+   "cat": "tech"
+  },
+  {
+   "id": "Triumph-1.12.2-3.19.2.jar",
+   "name": "Triumph",
+   "group": "progress",
+   "role": "Гілки досягнень збірки",
+   "mb": 0.4,
+   "cat": "main"
+  },
+  {
+   "id": "tumbleweed-1.12-0.4.7.jar",
+   "name": "Tumbleweed",
+   "group": "world",
+   "role": "Перекотиполе в пустелях",
+   "mb": 0.1,
+   "cat": "world"
+  },
+  {
+   "id": "u_team_core-forge-1.12.2-2.2.5.375.jar",
+   "name": "U Team Core",
+   "group": "lib",
+   "role": "Бібліотека Useful Railroads",
+   "mb": 0.3,
+   "cat": "lib"
+  },
+  {
+   "id": "UniversalTweaks-1.12.2-1.21.0.jar",
+   "name": "Universal Tweaks",
+   "group": "platform",
+   "role": "Сотні виправлень і налаштувань",
+   "mb": 1.9,
+   "cat": "tech"
+  },
+  {
+   "id": "useful_railroads-1.12.2-1.1.3.24.jar",
+   "name": "Useful Railroads",
+   "group": "content",
+   "role": "Швидкі рейки, тепер і на схилах",
+   "mb": 0.1,
+   "cat": "world"
+  },
+  {
+   "id": "WolfArmorAndStorage-3.8.1+1.12.2.alpha.1-SNAPSHOT-signed.jar",
+   "name": "Wolf Armor and Storage",
+   "group": "content",
+   "role": "Броня й сумки для вовків",
+   "mb": 2.0,
+   "cat": "world"
+  },
+  {
+   "id": "zume-1.2.2.jar",
+   "name": "Zume",
+   "group": "visual",
+   "role": "Наближення камери",
+   "mb": 0.1,
+   "cat": "qol"
+  },
+  {
+   "id": "cleanroom-0.7.14-alpha-universal.jar",
+   "name": "Cleanroom",
+   "group": "platform",
+   "role": "Завантажувач гри: заміна Forge зі вбудованим MixinBooter, ConfigAnytime і FermiumBooter",
+   "mb": 0,
+   "external": true,
+   "cat": "tech"
+  },
+  {
+   "id": "sarosskinchanger-1.2.jar",
+   "name": "Saro's Skin Changer",
+   "group": "ui",
+   "role": "Власні скіни через /skin на сервері без ліцензії (замість CustomSkinLoader)",
+   "mb": 0.1,
+   "cat": "qol"
+  },
+  {
+   "id": "roomfortwo-forge-1.12.2-0.3.1.jar",
+   "name": "Room For Two",
+   "group": "content",
+   "role": "Двоє гравців сплять в одному ліжку",
+   "mb": 0.0,
+   "cat": "qol"
+  },
+  {
+   "id": "twoplayersonehorse-1.12.2-1.0.3.jar",
+   "name": "Two Players One Horse",
+   "group": "content",
+   "role": "Двоє гравців на одному коні",
+   "mb": 0.9,
+   "cat": "qol"
+  }
+ ],
+ "links": [
+  {
+   "source": "+Fugue-0.25.5.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "required": 1,
+    "patch": 1
+   },
+   "why": [
+    "Обов'язково за описом мода: cleanroom",
+    "Правки або сумісність із кодом zone/rong/mixinbooter"
+   ]
+  },
+  {
+   "source": "2P2Rcompat-1.0.0.jar",
+   "target": "funtnt-1.12.2.0.jar",
+   "kinds": {
+    "optional": 1,
+    "code": 1,
+    "role": 1
+   },
+   "why": [
+    "Необов'язково, якщо є: funtnt",
+    "Звертається до класів naturix/funtnt/blocks",
+    "Fun TNT спалахує від вогню, роздавача й вибуху"
+   ]
+  },
+  {
+   "source": "2P2Rcompat-1.0.0.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "required": 1,
+    "code": 21,
+    "role": 2
+   },
+   "why": [
+    "Обов'язково за описом мода: galacticraftcore",
+    "Звертається до класів micdoodle8/mods/galacticraft",
+    "Прибирає вильоти карти планет і малює світіння блоків Galacticraft",
+    "Потокобезпечна перевірка повітря для дихання"
+   ]
+  },
+  {
+   "source": "2P2Rcompat-1.0.0.jar",
+   "target": "AsmodeusCore-1.12.2-1.0.2.jar",
+   "kinds": {
+    "required": 1,
+    "code": 5,
+    "role": 2
+   },
+   "why": [
+    "Обов'язково за описом мода: asmodeuscore",
+    "Звертається до класів asmodeuscore/core/astronomy",
+    "Виправляє туман, пакети карти та радіацію AsmodeusCore",
+    "Швидкий час доби на планетах World Engine"
+   ]
+  },
+  {
+   "source": "2P2Rcompat-1.0.0.jar",
+   "target": "GalacticResearch-1.1.3.jar",
+   "kinds": {
+    "optional": 1,
+    "role": 2
+   },
+   "why": [
+    "Необов'язково, якщо є: galacticresearch",
+    "Перекладає карту Galactic Research і прибирає виліт телескопа",
+    "Телескоп з краю системи бачить Альфу Центавра й Тау Кита"
+   ]
+  },
+  {
+   "source": "2P2Rcompat-1.0.0.jar",
+   "target": "JustEnoughResources-1.12.2-0.9.3.203.jar",
+   "kinds": {
+    "optional": 1,
+    "code": 11,
+    "role": 1
+   },
+   "why": [
+    "Необов'язково, якщо є: jeresources",
+    "Звертається до класів jeresources/api",
+    "Луска дракона з'являється в JER"
+   ]
+  },
+  {
+   "source": "2P2Rcompat-1.0.0.jar",
+   "target": "GalaxySpace-1.12.2-2.1.4.jar",
+   "kinds": {
+    "optional": 1,
+    "role": 2
+   },
+   "why": [
+    "Необов'язково, якщо є: galaxyspace",
+    "Малює світіння блоків GalaxySpace і перекладає екран телепортації",
+    "Ланцюгові вибухи газів, корали Тау Кита, закриті газові кишені"
+   ]
+  },
+  {
+   "source": "2P2Rcompat-1.0.0.jar",
+   "target": "Quark-r1.6-179.jar",
+   "kinds": {
+    "optional": 1
+   },
+   "why": [
+    "Необов'язково, якщо є: quark"
+   ]
+  },
+  {
+   "source": "AdChimneys-1.12.2-3.5.16.0-build.0654.jar",
+   "target": "ForgeEndertech-1.12.2-4.5.6.1-build.0648.jar",
+   "kinds": {
+    "required": 1,
+    "code": 477
+   },
+   "why": [
+    "Обов'язково за описом мода: forgeendertech",
+    "Звертається до класів com/endertech/minecraft/forge"
+   ]
+  },
+  {
+   "source": "AdPother-1.12.2-1.2.25.0-build.0673.jar",
+   "target": "ForgeEndertech-1.12.2-4.5.6.1-build.0648.jar",
+   "kinds": {
+    "required": 1,
+    "code": 3334
+   },
+   "why": [
+    "Обов'язково за описом мода: forgeendertech",
+    "Звертається до класів com/endertech/minecraft/forge"
+   ]
+  },
+  {
+   "source": "AntiqueAtlasAutoMarker-1.6.1.4.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "required": 1,
+    "code": 41
+   },
+   "why": [
+    "Обов'язково за описом мода: fermiumbooter",
+    "Звертається до класів fermiumbooter/annotations"
+   ]
+  },
+  {
+   "source": "AntiqueAtlasAutoMarker-1.6.1.4.jar",
+   "target": "antiqueatlas-1.12.2-4.6.3.jar",
+   "kinds": {
+    "required": 1,
+    "code": 839,
+    "config": 184
+   },
+   "why": [
+    "Обов'язково за описом мода: antiqueatlas",
+    "Звертається до класів hunternif/mc/atlas",
+    "Налаштування згадують предмети або блоки antiqueatlas"
+   ]
+  },
+  {
+   "source": "AsmodeusCore-1.12.2-1.0.2.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "optional": 2,
+    "code": 633
+   },
+   "why": [
+    "Необов'язково, якщо є: galacticraftcore",
+    "Необов'язково, якщо є: galacticraftplanets",
+    "Звертається до класів micdoodle8/mods/galacticraft"
+   ]
+  },
+  {
+   "source": "AtlasExtras-1.12.2-1.8.jar",
+   "target": "antiqueatlas-1.12.2-4.6.3.jar",
+   "kinds": {
+    "required": 1,
+    "code": 29
+   },
+   "why": [
+    "Обов'язково за описом мода: antiqueatlas",
+    "Звертається до класів hunternif/mc/atlas"
+   ]
+  },
+  {
+   "source": "base-1.12.2-3.14.0.jar",
+   "target": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "kinds": {
+    "optional": 1
+   },
+   "why": [
+    "Необов'язково, якщо є: crafttweaker"
+   ]
+  },
+  {
+   "source": "base-1.12.2-3.14.0.jar",
+   "target": "jei_1.12.2-4.24.0.1043.jar",
+   "kinds": {
+    "optional": 1,
+    "code": 10
+   },
+   "why": [
+    "Необов'язково, якщо є: jei",
+    "Звертається до класів mezz/jei/api"
+   ]
+  },
+  {
+   "source": "betterendcities-1.2.0-forge-1.12.2.jar",
+   "target": "tonistructures-1.2.0+forge-1.12.2.jar",
+   "kinds": {
+    "required": 1,
+    "code": 25
+   },
+   "why": [
+    "Обов'язково за описом мода: tonistructures",
+    "Звертається до класів net/tonicarter/tonistructures"
+   ]
+  },
+  {
+   "source": "bettermonuments-1.2.0-forge-1.12.2.jar",
+   "target": "tonistructures-1.2.0+forge-1.12.2.jar",
+   "kinds": {
+    "required": 1,
+    "code": 25
+   },
+   "why": [
+    "Обов'язково за описом мода: tonistructures",
+    "Звертається до класів net/tonicarter/tonistructures"
+   ]
+  },
+  {
+   "source": "BiomeSpecificDungeons-1.12.2-1.0.3.jar",
+   "target": "Bookshelf-1.12.2-2.3.590.jar",
+   "kinds": {
+    "required": 1,
+    "code": 39
+   },
+   "why": [
+    "Обов'язково за описом мода: bookshelf",
+    "Звертається до класів net/darkhax/bookshelf"
+   ]
+  },
+  {
+   "source": "BNBGamingLib-1.12.2-2.17.6.jar",
+   "target": "BNBGamingCore-1.12.2-0.12.0.jar",
+   "kinds": {
+    "optional": 1
+   },
+   "why": [
+    "Необов'язково, якщо є: bnbgamingcore"
+   ]
+  },
+  {
+   "source": "Bountiful-1.12.2-2.2.3.jar",
+   "target": "Forgelin-Continuous-2.4.20.0.jar",
+   "kinds": {
+    "required": 1
+   },
+   "why": [
+    "Обов'язково за описом мода: forgelin"
+   ]
+  },
+  {
+   "source": "celeritasextra-0.11.3-beta.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "required": 1
+   },
+   "why": [
+    "Обов'язково за описом мода: cleanroom"
+   ]
+  },
+  {
+   "source": "celeritasextra-0.11.3-beta.jar",
+   "target": "Nothirium-1.12.2-0.4.9-beta.jar",
+   "kinds": {
+    "optional": 1,
+    "code": 1
+   },
+   "why": [
+    "Необов'язково, якщо є: nothirium",
+    "Звертається до класів meldexun/nothirium/mc"
+   ]
+  },
+  {
+   "source": "Charm-1.12.2-1.4.1.jar",
+   "target": "Redstone++ ver1.3e.jar",
+   "kinds": {
+    "optional": 1
+   },
+   "why": [
+    "Необов'язково, якщо є: redstoneplusplus"
+   ]
+  },
+  {
+   "source": "Charm-1.12.2-1.4.1.jar",
+   "target": "jei_1.12.2-4.24.0.1043.jar",
+   "kinds": {
+    "optional": 1,
+    "code": 44
+   },
+   "why": [
+    "Необов'язково, якщо є: jei",
+    "Звертається до класів mezz/jei/api"
+   ]
+  },
+  {
+   "source": "Charm-1.12.2-1.4.1.jar",
+   "target": "Quark-r1.6-179.jar",
+   "kinds": {
+    "optional": 1,
+    "code": 1,
+    "config": 15
+   },
+   "why": [
+    "Необов'язково, якщо є: quark",
+    "Звертається до класів vazkii/quark/base",
+    "Налаштування згадують предмети або блоки quark"
+   ]
+  },
+  {
+   "source": "chat_heads-0.1.3.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "optional": 1
+   },
+   "why": [
+    "Необов'язково, якщо є: mixinbooter"
+   ]
+  },
+  {
+   "source": "chibi-5.34.jar",
+   "target": "jei_1.12.2-4.24.0.1043.jar",
+   "kinds": {
+    "optional": 1,
+    "patch": 3
+   },
+   "why": [
+    "Необов'язково, якщо є: jei",
+    "Правки або сумісність із кодом mezz/jei/gui"
+   ]
+  },
+  {
+   "source": "chibi-5.34.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "required": 1,
+    "patch": 2
+   },
+   "why": [
+    "Обов'язково за описом мода: mixinbooter",
+    "Правки або сумісність із кодом zone/rong/mixinbooter"
+   ]
+  },
+  {
+   "source": "ContentTweaker-1.12.2-4.10.0.jar",
+   "target": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "kinds": {
+    "required": 1,
+    "code": 39
+   },
+   "why": [
+    "Обов'язково за описом мода: crafttweaker",
+    "Звертається до класів stanhebben/zenscript/type"
+   ]
+  },
+  {
+   "source": "ContentTweaker-1.12.2-4.10.0.jar",
+   "target": "base-1.12.2-3.14.0.jar",
+   "kinds": {
+    "required": 1,
+    "code": 214
+   },
+   "why": [
+    "Обов'язково за описом мода: base",
+    "Звертається до класів com/teamacronymcoders/base"
+   ]
+  },
+  {
+   "source": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "target": "jei_1.12.2-4.24.0.1043.jar",
+   "kinds": {
+    "optional": 2,
+    "code": 3
+   },
+   "why": [
+    "Необов'язково, якщо є: jei",
+    "Звертається до класів mezz/jei/plugins"
+   ]
+  },
+  {
+   "source": "DynamicSurroundings-1.12.2-3.6.3.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "optional": 1
+   },
+   "why": [
+    "Необов'язково, якщо є: galacticraftcore"
+   ]
+  },
+  {
+   "source": "DynamicSurroundings-1.12.2-3.6.3.jar",
+   "target": "OreLib-1.12.2-3.6.0.1.jar",
+   "kinds": {
+    "required": 1,
+    "code": 1051
+   },
+   "why": [
+    "Обов'язково за описом мода: orelib",
+    "Звертається до класів org/orecruncher/lib"
+   ]
+  },
+  {
+   "source": "EnhancedVisuals_v1.4.4_mc1.12.2.jar",
+   "target": "CreativeCore_v1.10.71_mc1.12.2.jar",
+   "kinds": {
+    "required": 1,
+    "code": 142
+   },
+   "why": [
+    "Обов'язково за описом мода: creativecore",
+    "Звертається до класів com/creativemd/creativecore"
+   ]
+  },
+  {
+   "source": "EntityCulling-1.12.2-6.5.0.jar",
+   "target": "RenderLib-1.12.2-1.4.5.jar",
+   "kinds": {
+    "required": 1,
+    "code": 8
+   },
+   "why": [
+    "Обов'язково за описом мода: renderlib",
+    "Звертається до класів meldexun/renderlib/renderer"
+   ]
+  },
+  {
+   "source": "Future-MC-0.2.21.jar",
+   "target": "Forgelin-Continuous-2.4.20.0.jar",
+   "kinds": {
+    "required": 1
+   },
+   "why": [
+    "Обов'язково за описом мода: forgelin"
+   ]
+  },
+  {
+   "source": "GalacticraftTweaker-1.12.2-1.0.3.jar",
+   "target": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "kinds": {
+    "required": 1,
+    "script": 1
+   },
+   "why": [
+    "Обов'язково за описом мода: crafttweaker",
+    "recipes.zs додає рецепт компресора"
+   ]
+  },
+  {
+   "source": "GalacticraftTweaker-1.12.2-1.0.3.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "required": 2,
+    "code": 13
+   },
+   "why": [
+    "Обов'язково за описом мода: galacticraftplanets",
+    "Обов'язково за описом мода: galacticraftcore",
+    "Звертається до класів micdoodle8/mods/galacticraft"
+   ]
+  },
+  {
+   "source": "GalacticResearch-1.1.3.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "required": 1,
+    "code": 799,
+    "role": 1,
+    "config": 12
+   },
+   "why": [
+    "Обов'язково за описом мода: galacticraftplanets",
+    "Звертається до класів micdoodle8/mods/galacticraft",
+    "Дослідження й місії визначають, куди можна летіти",
+    "Налаштування згадують предмети або блоки galacticraftcore",
+    "Налаштування згадують предмети або блоки galacticraftplanets"
+   ]
+  },
+  {
+   "source": "GalacticTweaks-1.8.0.jar",
+   "target": "AsmodeusCore-1.12.2-1.0.2.jar",
+   "kinds": {
+    "optional": 1,
+    "code": 6
+   },
+   "why": [
+    "Необов'язково, якщо є: asmodeuscore",
+    "Звертається до класів asmodeuscore/core/astronomy"
+   ]
+  },
+  {
+   "source": "GalacticTweaks-1.8.0.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "required": 1,
+    "code": 260
+   },
+   "why": [
+    "Обов'язково за описом мода: galacticraftcore",
+    "Звертається до класів micdoodle8/mods/galacticraft"
+   ]
+  },
+  {
+   "source": "GalacticTweaks-1.8.0.jar",
+   "target": "GalaxySpace-1.12.2-2.1.4.jar",
+   "kinds": {
+    "optional": 1,
+    "code": 1
+   },
+   "why": [
+    "Необов'язково, якщо є: galaxyspace",
+    "Звертається до класів galaxyspace/systems/SolarSystem"
+   ]
+  },
+  {
+   "source": "GalaxySpace-1.12.2-2.1.4.jar",
+   "target": "AsmodeusCore-1.12.2-1.0.2.jar",
+   "kinds": {
+    "required": 1,
+    "code": 563
+   },
+   "why": [
+    "Обов'язково за описом мода: asmodeuscore",
+    "Звертається до класів asmodeuscore/core/astronomy"
+   ]
+  },
+  {
+   "source": "GalaxySpace-1.12.2-2.1.4.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "required": 2,
+    "code": 3303,
+    "role": 1
+   },
+   "why": [
+    "Обов'язково за описом мода: galacticraftplanets",
+    "Обов'язково за описом мода: galacticraftcore",
+    "Звертається до класів micdoodle8/mods/galacticraft",
+    "Розширює ракети, планети й машини Galacticraft"
+   ]
+  },
+  {
+   "source": "GameStages-1.12.2-2.0.123.jar",
+   "target": "Bookshelf-1.12.2-2.3.590.jar",
+   "kinds": {
+    "required": 1,
+    "code": 27
+   },
+   "why": [
+    "Обов'язково за описом мода: bookshelf",
+    "Звертається до класів net/darkhax/bookshelf"
+   ]
+  },
+  {
+   "source": "jepb-1.12-1.2.1.jar",
+   "target": "jei_1.12.2-4.24.0.1043.jar",
+   "kinds": {
+    "required": 1,
+    "code": 70
+   },
+   "why": [
+    "Обов'язково за описом мода: jei",
+    "Звертається до класів mezz/jei/api"
+   ]
+  },
+  {
+   "source": "JustEnoughResources-1.12.2-0.9.3.203.jar",
+   "target": "jei_1.12.2-4.24.0.1043.jar",
+   "kinds": {
+    "required": 1,
+    "code": 262
+   },
+   "why": [
+    "Обов'язково за описом мода: jei",
+    "Звертається до класів mezz/jei/api"
+   ]
+  },
+  {
+   "source": "Localizator-1.12.2-1.0.15.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "required": 1
+   },
+   "why": [
+    "Обов'язково за описом мода: fermiumbooter"
+   ]
+  },
+  {
+   "source": "LootTweaker-0.5.1+MC1.12.2-DLS0.jar",
+   "target": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "kinds": {
+    "required": 1,
+    "script": 1
+   },
+   "why": [
+    "Обов'язково за описом мода: crafttweaker",
+    "loot.zs викликає LootTweaker"
+   ]
+  },
+  {
+   "source": "LootTweaker-0.5.1+MC1.12.2-DLS0.jar",
+   "target": "JustEnoughResources-1.12.2-0.9.3.203.jar",
+   "kinds": {
+    "optional": 1
+   },
+   "why": [
+    "Необов'язково, якщо є: jeresources"
+   ]
+  },
+  {
+   "source": "Nothirium-1.12.2-0.4.9-beta.jar",
+   "target": "RenderLib-1.12.2-1.4.5.jar",
+   "kinds": {
+    "required": 1
+   },
+   "why": [
+    "Обов'язково за описом мода: renderlib"
+   ]
+  },
+  {
+   "source": "OreStages-1.12.2-2.0.38.jar",
+   "target": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "kinds": {
+    "required": 1
+   },
+   "why": [
+    "Обов'язково за описом мода: crafttweaker"
+   ]
+  },
+  {
+   "source": "OreStages-1.12.2-2.0.38.jar",
+   "target": "Bookshelf-1.12.2-2.3.590.jar",
+   "kinds": {
+    "required": 1,
+    "code": 14
+   },
+   "why": [
+    "Обов'язково за описом мода: bookshelf",
+    "Звертається до класів net/darkhax/bookshelf"
+   ]
+  },
+  {
+   "source": "OreStages-1.12.2-2.0.38.jar",
+   "target": "GameStages-1.12.2-2.0.123.jar",
+   "kinds": {
+    "required": 1,
+    "code": 6
+   },
+   "why": [
+    "Обов'язково за описом мода: gamestages",
+    "Звертається до класів net/darkhax/gamestages"
+   ]
+  },
+  {
+   "source": "outfox-0.1.5-mc1.12.2.jar",
+   "target": "Hwyla-1.8.26-B41_1.12.2.jar",
+   "kinds": {
+    "optional": 1,
+    "code": 12
+   },
+   "why": [
+    "Необов'язково, якщо є: waila",
+    "Звертається до класів mcp/mobius/waila"
+   ]
+  },
+  {
+   "source": "pollutantpump-1.12.2-1.3.0.jar",
+   "target": "AdPother-1.12.2-1.2.25.0-build.0673.jar",
+   "kinds": {
+    "required": 1,
+    "code": 17,
+    "role": 1
+   },
+   "why": [
+    "Обов'язково за описом мода: adpother",
+    "Звертається до класів com/endertech/minecraft/mods/adpother",
+    "Насос відкачує забруднення"
+   ]
+  },
+  {
+   "source": "pulsar-0.6.7-beta.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "required": 1
+   },
+   "why": [
+    "Обов'язково за описом мода: cleanroom"
+   ]
+  },
+  {
+   "source": "Quark-r1.6-179.jar",
+   "target": "AutoRegLib-1.12.2-1.3-32.jar",
+   "kinds": {
+    "required": 1,
+    "code": 275
+   },
+   "why": [
+    "Обов'язково за описом мода: autoreglib",
+    "Звертається до класів vazkii/arl/block"
+   ]
+  },
+  {
+   "source": "Quark-r1.6-179.jar",
+   "target": "jei_1.12.2-4.24.0.1043.jar",
+   "kinds": {
+    "optional": 1,
+    "code": 1
+   },
+   "why": [
+    "Необов'язково, якщо є: jei",
+    "Звертається до класів mezz/jei/gui"
+   ]
+  },
+  {
+   "source": "RecipeStages-1.1.3.8.jar",
+   "target": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "kinds": {
+    "required": 1
+   },
+   "why": [
+    "Обов'язково за описом мода: crafttweaker"
+   ]
+  },
+  {
+   "source": "RecipeStages-1.1.3.8.jar",
+   "target": "GameStages-1.12.2-2.0.123.jar",
+   "kinds": {
+    "optional": 1,
+    "code": 8
+   },
+   "why": [
+    "Необов'язково, якщо є: gamestages",
+    "Звертається до класів net/darkhax/gamestages"
+   ]
+  },
+  {
+   "source": "rockytweaks-1.12.2-0.6.1.jar",
+   "target": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "kinds": {
+    "required": 1,
+    "script": 1
+   },
+   "why": [
+    "Обов'язково за описом мода: crafttweaker",
+    "recipes.zs керує ковадлом через цей мод"
+   ]
+  },
+  {
+   "source": "rockytweaks-1.12.2-0.6.1.jar",
+   "target": "MTLib-3.0.7.jar",
+   "kinds": {
+    "required": 1,
+    "code": 15
+   },
+   "why": [
+    "Обов'язково за описом мода: mtlib",
+    "Звертається до класів com/blamejared/mtlib"
+   ]
+  },
+  {
+   "source": "rockytweaks-1.12.2-0.6.1.jar",
+   "target": "jei_1.12.2-4.24.0.1043.jar",
+   "kinds": {
+    "required": 1,
+    "code": 53
+   },
+   "why": [
+    "Обов'язково за описом мода: jei",
+    "Звертається до класів mezz/jei/api"
+   ]
+  },
+  {
+   "source": "SpaceAmbient-1.12.2-0.0.1.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "required": 2,
+    "code": 3
+   },
+   "why": [
+    "Обов'язково за описом мода: galacticraftplanets",
+    "Обов'язково за описом мода: galacticraftcore",
+    "Звертається до класів micdoodle8/mods/galacticraft"
+   ]
+  },
+  {
+   "source": "squidnoglitch-mc1.12.2-v1.0.0.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "required": 1,
+    "code": 1
+   },
+   "why": [
+    "Обов'язково за описом мода: mixinbooter",
+    "Звертається до класів zone/rong/mixinbooter"
+   ]
+  },
+  {
+   "source": "Triumph-1.12.2-3.19.2.jar",
+   "target": "BNBGamingLib-1.12.2-2.17.6.jar",
+   "kinds": {
+    "required": 1,
+    "code": 317
+   },
+   "why": [
+    "Обов'язково за описом мода: bnbgaminglib",
+    "Звертається до класів com/bloodnbonesgaming/lib"
+   ]
+  },
+  {
+   "source": "Triumph-1.12.2-3.19.2.jar",
+   "target": "BNBGamingCore-1.12.2-0.12.0.jar",
+   "kinds": {
+    "required": 1,
+    "code": 26
+   },
+   "why": [
+    "Обов'язково за описом мода: bnbgamingcore",
+    "Звертається до класів com/bloodnbonesgaming/bnbgamingcore"
+   ]
+  },
+  {
+   "source": "Triumph-1.12.2-3.19.2.jar",
+   "target": "GameStages-1.12.2-2.0.123.jar",
+   "kinds": {
+    "optional": 1,
+    "code": 12
+   },
+   "why": [
+    "Необов'язково, якщо є: gamestages",
+    "Звертається до класів net/darkhax/gamestages"
+   ]
+  },
+  {
+   "source": "UniversalTweaks-1.12.2-1.21.0.jar",
+   "target": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "kinds": {
+    "optional": 1
+   },
+   "why": [
+    "Необов'язково, якщо є: crafttweaker"
+   ]
+  },
+  {
+   "source": "UniversalTweaks-1.12.2-1.21.0.jar",
+   "target": "Quark-r1.6-179.jar",
+   "kinds": {
+    "optional": 1,
+    "patch": 1
+   },
+   "why": [
+    "Необов'язково, якщо є: quark",
+    "Правки або сумісність із кодом vazkii/quark/world"
+   ]
+  },
+  {
+   "source": "UniversalTweaks-1.12.2-1.21.0.jar",
+   "target": "collective-1.12.2-3.0.jar",
+   "kinds": {
+    "optional": 1,
+    "patch": 2
+   },
+   "why": [
+    "Необов'язково, якщо є: collective",
+    "Правки або сумісність із кодом com/natamus/collective"
+   ]
+  },
+  {
+   "source": "UniversalTweaks-1.12.2-1.21.0.jar",
+   "target": "ContentTweaker-1.12.2-4.10.0.jar",
+   "kinds": {
+    "optional": 1,
+    "patch": 15
+   },
+   "why": [
+    "Необов'язково, якщо є: contenttweaker",
+    "Правки або сумісність із кодом com/teamacronymcoders/contenttweaker"
+   ]
+  },
+  {
+   "source": "UniversalTweaks-1.12.2-1.21.0.jar",
+   "target": "Hwyla-1.8.26-B41_1.12.2.jar",
+   "kinds": {
+    "optional": 1,
+    "patch": 2
+   },
+   "why": [
+    "Необов'язково, якщо є: waila",
+    "Правки або сумісність із кодом mcp/mobius/waila"
+   ]
+  },
+  {
+   "source": "UniversalTweaks-1.12.2-1.21.0.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "required": 2,
+    "patch": 43
+   },
+   "why": [
+    "Обов'язково за описом мода: configanytime",
+    "Обов'язково за описом мода: mixinbooter",
+    "Правки або сумісність із кодом com/cleanroommc/configanytime",
+    "Правки або сумісність із кодом zone/rong/mixinbooter"
+   ]
+  },
+  {
+   "source": "useful_railroads-1.12.2-1.1.3.24.jar",
+   "target": "u_team_core-forge-1.12.2-2.2.5.375.jar",
+   "kinds": {
+    "required": 1,
+    "code": 20
+   },
+   "why": [
+    "Обов'язково за описом мода: uteamcore",
+    "Звертається до класів info/u_team/u_team_core"
+   ]
+  },
+  {
+   "source": "+Fugue-0.25.5.jar",
+   "target": "AquaAcrobatics-1.15.4.jar",
+   "kinds": {
+    "patch": 1
+   },
+   "why": [
+    "Правки або сумісність із кодом com/fuzs/aquaacrobatics"
+   ]
+  },
+  {
+   "source": "+Fugue-0.25.5.jar",
+   "target": "chibi-5.34.jar",
+   "kinds": {
+    "patch": 1
+   },
+   "why": [
+    "Правки або сумісність із кодом zone/rong/loliasm"
+   ]
+  },
+  {
+   "source": "+Fugue-0.25.5.jar",
+   "target": "CreativeCore_v1.10.71_mc1.12.2.jar",
+   "kinds": {
+    "patch": 1
+   },
+   "why": [
+    "Правки або сумісність із кодом com/creativemd/creativecore"
+   ]
+  },
+  {
+   "source": "+Fugue-0.25.5.jar",
+   "target": "Patchouli-1.0-23.6.jar",
+   "kinds": {
+    "patch": 1
+   },
+   "why": [
+    "Правки або сумісність із кодом vazkii/patchouli/common"
+   ]
+  },
+  {
+   "source": "2P2Rcompat-1.0.0.jar",
+   "target": "celeritasdynamiclights-1.2.11.jar",
+   "kinds": {
+    "code": 4,
+    "role": 2
+   },
+   "why": [
+    "Звертається до класів dev/lambdaurora/lambdynlights",
+    "Смолоскип у руці не світить у вакуумі",
+    "Прибирає зависання, коли зникає тайл-ентіті"
+   ]
+  },
+  {
+   "source": "2P2Rcompat-1.0.0.jar",
+   "target": "DynamicSurroundings-1.12.2-3.6.3.jar",
+   "kinds": {
+    "code": 3,
+    "role": 1
+   },
+   "why": [
+    "Звертається до класів org/orecruncher/dsurround",
+    "Шум бурі на Марсі й густий туман у сильну бурю"
+   ]
+  },
+  {
+   "source": "2P2Rcompat-1.0.0.jar",
+   "target": "Fluidlogged-API-v3.3.3-mc1.12.2.jar",
+   "kinds": {
+    "code": 8
+   },
+   "why": [
+    "Звертається до класів git/jbredwards/fluidlogged_api"
+   ]
+  },
+  {
+   "source": "2P2Rcompat-1.0.0.jar",
+   "target": "GameStages-1.12.2-2.0.123.jar",
+   "kinds": {
+    "code": 1
+   },
+   "why": [
+    "Звертається до класів net/darkhax/gamestages"
+   ]
+  },
+  {
+   "source": "2P2Rcompat-1.0.0.jar",
+   "target": "jei_1.12.2-4.24.0.1043.jar",
+   "kinds": {
+    "code": 1
+   },
+   "why": [
+    "Звертається до класів mezz/jei/gui"
+   ]
+  },
+  {
+   "source": "2P2Rcompat-1.0.0.jar",
+   "target": "Nothirium-1.12.2-0.4.9-beta.jar",
+   "kinds": {
+    "code": 2,
+    "role": 1
+   },
+   "why": [
+    "Звертається до класів meldexun/nothirium/util",
+    "Повертає світні текстури, які Nothirium не малював"
+   ]
+  },
+  {
+   "source": "2P2Rcompat-1.0.0.jar",
+   "target": "Patchouli-1.0-23.6.jar",
+   "kinds": {
+    "code": 6,
+    "role": 1
+   },
+   "why": [
+    "Звертається до класів vazkii/patchouli/client",
+    "Правильно рахує прогрес у главах книги"
+   ]
+  },
+  {
+   "source": "AdPother-1.12.2-1.2.25.0-build.0673.jar",
+   "target": "Hwyla-1.8.26-B41_1.12.2.jar",
+   "kinds": {
+    "code": 14
+   },
+   "why": [
+    "Звертається до класів mcp/mobius/waila"
+   ]
+  },
+  {
+   "source": "AntiqueAtlasAutoMarker-1.6.1.4.jar",
+   "target": "-BetterConfig-1.12.2-1.3.0.jar",
+   "kinds": {
+    "code": 154
+   },
+   "why": [
+    "Звертається до класів meldexun/betterconfig/api"
+   ]
+  },
+  {
+   "source": "AntiqueAtlasAutoMarker-1.6.1.4.jar",
+   "target": "Nether-API-v1.5.4-mc1.12.2.jar",
+   "kinds": {
+    "code": 3
+   },
+   "why": [
+    "Звертається до класів git/jbredwards/nether_api"
+   ]
+  },
+  {
+   "source": "AntiqueAtlasAutoMarker-1.6.1.4.jar",
+   "target": "Quark-r1.6-179.jar",
+   "kinds": {
+    "code": 1
+   },
+   "why": [
+    "Звертається до класів vazkii/quark/world"
+   ]
+  },
+  {
+   "source": "AquaAcrobatics-1.15.4.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "code": 1
+   },
+   "why": [
+    "Звертається до класів zone/rong/mixinbooter"
+   ]
+  },
+  {
+   "source": "AquaAcrobatics-1.15.4.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "code": 3
+   },
+   "why": [
+    "Звертається до класів micdoodle8/mods/galacticraft"
+   ]
+  },
+  {
+   "source": "AutoRegLib-1.12.2-1.3-32.jar",
+   "target": "jei_1.12.2-4.24.0.1043.jar",
+   "kinds": {
+    "code": 5
+   },
+   "why": [
+    "Звертається до класів mezz/jei/api"
+   ]
+  },
+  {
+   "source": "Bountiful-1.12.2-2.2.3.jar",
+   "target": "GameStages-1.12.2-2.0.123.jar",
+   "kinds": {
+    "code": 3,
+    "role": 1
+   },
+   "why": [
+    "Звертається до класів net/darkhax/gamestages",
+    "Космічні завдання відкриваються етапами висадок"
+   ]
+  },
+  {
+   "source": "celeritasdynamiclights-1.2.11.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "code": 1
+   },
+   "why": [
+    "Звертається до класів zone/rong/mixinbooter"
+   ]
+  },
+  {
+   "source": "celeritasdynamiclights-1.2.11.jar",
+   "target": "Fluidlogged-API-v3.3.3-mc1.12.2.jar",
+   "kinds": {
+    "code": 1
+   },
+   "why": [
+    "Звертається до класів git/jbredwards/fluidlogged_api"
+   ]
+  },
+  {
+   "source": "celeritasdynamiclights-1.2.11.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "code": 5
+   },
+   "why": [
+    "Звертається до класів micdoodle8/mods/galacticraft"
+   ]
+  },
+  {
+   "source": "datarium-0.6.1.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "code": 2
+   },
+   "why": [
+    "Звертається до класів zone/rong/mixinbooter"
+   ]
+  },
+  {
+   "source": "DynamicSurroundings-1.12.2-3.6.3.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "code": 15
+   },
+   "why": [
+    "Звертається до класів org/jetbrains/java"
+   ]
+  },
+  {
+   "source": "DynamicSurroundings-1.12.2-3.6.3.jar",
+   "target": "CTM-MC1.12.2-1.0.2.31.jar",
+   "kinds": {
+    "code": 2
+   },
+   "why": [
+    "Звертається до класів team/chisel/ctm"
+   ]
+  },
+  {
+   "source": "FermiumMixins-1.0.15.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "patch": 350
+   },
+   "why": [
+    "Правки або сумісність із кодом fermiumbooter/annotations"
+   ]
+  },
+  {
+   "source": "FermiumMixins-1.0.15.jar",
+   "target": "AutoRegLib-1.12.2-1.3-32.jar",
+   "kinds": {
+    "patch": 1
+   },
+   "why": [
+    "Правки або сумісність із кодом vazkii/arl/block"
+   ]
+  },
+  {
+   "source": "FermiumMixins-1.0.15.jar",
+   "target": "Charm-1.12.2-1.4.1.jar",
+   "kinds": {
+    "patch": 1
+   },
+   "why": [
+    "Правки або сумісність із кодом svenhjol/charm/world"
+   ]
+  },
+  {
+   "source": "FermiumMixins-1.0.15.jar",
+   "target": "CreativeCore_v1.10.71_mc1.12.2.jar",
+   "kinds": {
+    "patch": 4
+   },
+   "why": [
+    "Правки або сумісність із кодом com/creativemd/creativecore"
+   ]
+  },
+  {
+   "source": "FermiumMixins-1.0.15.jar",
+   "target": "DynamicSurroundings-1.12.2-3.6.3.jar",
+   "kinds": {
+    "patch": 4
+   },
+   "why": [
+    "Правки або сумісність із кодом org/orecruncher/dsurround"
+   ]
+  },
+  {
+   "source": "FermiumMixins-1.0.15.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "patch": 4
+   },
+   "why": [
+    "Правки або сумісність із кодом micdoodle8/mods/galacticraft"
+   ]
+  },
+  {
+   "source": "FermiumMixins-1.0.15.jar",
+   "target": "jei_1.12.2-4.24.0.1043.jar",
+   "kinds": {
+    "patch": 1
+   },
+   "why": [
+    "Правки або сумісність із кодом mezz/jei/plugins"
+   ]
+  },
+  {
+   "source": "FermiumMixins-1.0.15.jar",
+   "target": "Nether-API-v1.5.4-mc1.12.2.jar",
+   "kinds": {
+    "patch": 6
+   },
+   "why": [
+    "Правки або сумісність із кодом git/jbredwards/nether_api"
+   ]
+  },
+  {
+   "source": "FermiumMixins-1.0.15.jar",
+   "target": "OreLib-1.12.2-3.6.0.1.jar",
+   "kinds": {
+    "patch": 11
+   },
+   "why": [
+    "Правки або сумісність із кодом org/orecruncher/lib"
+   ]
+  },
+  {
+   "source": "FermiumMixins-1.0.15.jar",
+   "target": "Quark-r1.6-179.jar",
+   "kinds": {
+    "patch": 17
+   },
+   "why": [
+    "Правки або сумісність із кодом vazkii/quark/world"
+   ]
+  },
+  {
+   "source": "FermiumMixins-1.0.15.jar",
+   "target": "ReachFix-1.12.2-1.1.3.jar",
+   "kinds": {
+    "patch": 1
+   },
+   "why": [
+    "Правки або сумісність із кодом meldexun/reachfix"
+   ]
+  },
+  {
+   "source": "flare-0.9.0.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "code": 2
+   },
+   "why": [
+    "Звертається до класів com/cleanroommc/configanytime",
+    "Звертається до класів zone/rong/mixinbooter"
+   ]
+  },
+  {
+   "source": "Fluidlogged-API-v3.3.3-mc1.12.2.jar",
+   "target": "DynamicSurroundings-1.12.2-3.6.3.jar",
+   "kinds": {
+    "code": 2
+   },
+   "why": [
+    "Звертається до класів org/orecruncher/dsurround"
+   ]
+  },
+  {
+   "source": "Fluidlogged-API-v3.3.3-mc1.12.2.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "code": 9,
+    "config": 26
+   },
+   "why": [
+    "Звертається до класів micdoodle8/mods/galacticraft",
+    "Налаштування згадують предмети або блоки galacticraftplanets",
+    "Налаштування згадують предмети або блоки galacticraftcore"
+   ]
+  },
+  {
+   "source": "Fluidlogged-API-v3.3.3-mc1.12.2.jar",
+   "target": "Nothirium-1.12.2-0.4.9-beta.jar",
+   "kinds": {
+    "code": 1
+   },
+   "why": [
+    "Звертається до класів meldexun/nothirium/mc"
+   ]
+  },
+  {
+   "source": "Fluidlogged-API-v3.3.3-mc1.12.2.jar",
+   "target": "OreLib-1.12.2-3.6.0.1.jar",
+   "kinds": {
+    "code": 2
+   },
+   "why": [
+    "Звертається до класів org/orecruncher/lib"
+   ]
+  },
+  {
+   "source": "Fluidlogged-API-v3.3.3-mc1.12.2.jar",
+   "target": "SmoothWater-0.1.4.jar",
+   "kinds": {
+    "code": 1
+   },
+   "why": [
+    "Звертається до класів pl/asie/smoothwater"
+   ]
+  },
+  {
+   "source": "Future-MC-0.2.21.jar",
+   "target": "AutoRegLib-1.12.2-1.3-32.jar",
+   "kinds": {
+    "code": 2
+   },
+   "why": [
+    "Звертається до класів vazkii/arl/block"
+   ]
+  },
+  {
+   "source": "Future-MC-0.2.21.jar",
+   "target": "Fluidlogged-API-v3.3.3-mc1.12.2.jar",
+   "kinds": {
+    "code": 6
+   },
+   "why": [
+    "Звертається до класів git/jbredwards/fluidlogged_api"
+   ]
+  },
+  {
+   "source": "Future-MC-0.2.21.jar",
+   "target": "jei_1.12.2-4.24.0.1043.jar",
+   "kinds": {
+    "code": 269
+   },
+   "why": [
+    "Звертається до класів mezz/jei/api"
+   ]
+  },
+  {
+   "source": "Future-MC-0.2.21.jar",
+   "target": "Quark-r1.6-179.jar",
+   "kinds": {
+    "code": 1
+   },
+   "why": [
+    "Звертається до класів vazkii/quark/base"
+   ]
+  },
+  {
+   "source": "Galacticraft-1.12.2-4.0.6.jar",
+   "target": "jei_1.12.2-4.24.0.1043.jar",
+   "kinds": {
+    "code": 431
+   },
+   "why": [
+    "Звертається до класів mezz/jei/api"
+   ]
+  },
+  {
+   "source": "GalacticResearch-1.1.3.jar",
+   "target": "AsmodeusCore-1.12.2-1.0.2.jar",
+   "kinds": {
+    "code": 21
+   },
+   "why": [
+    "Звертається до класів asmodeuscore/core/astronomy"
+   ]
+  },
+  {
+   "source": "GalacticResearch-1.1.3.jar",
+   "target": "GalaxySpace-1.12.2-2.1.4.jar",
+   "kinds": {
+    "code": 9,
+    "role": 1
+   },
+   "why": [
+    "Звертається до класів galaxyspace/systems/SolarSystem",
+    "Те саме дослідження охоплює планети GalaxySpace"
+   ]
+  },
+  {
+   "source": "GalacticResearch-1.1.3.jar",
+   "target": "jei_1.12.2-4.24.0.1043.jar",
+   "kinds": {
+    "code": 63
+   },
+   "why": [
+    "Звертається до класів mezz/jei/api"
+   ]
+  },
+  {
+   "source": "GalaxySpace-1.12.2-2.1.4.jar",
+   "target": "jei_1.12.2-4.24.0.1043.jar",
+   "kinds": {
+    "code": 325
+   },
+   "why": [
+    "Звертається до класів mezz/jei/api"
+   ]
+  },
+  {
+   "source": "Hwyla-1.8.26-B41_1.12.2.jar",
+   "target": "jei_1.12.2-4.24.0.1043.jar",
+   "kinds": {
+    "code": 15
+   },
+   "why": [
+    "Звертається до класів mezz/jei/api"
+   ]
+  },
+  {
+   "source": "Localizator-1.12.2-1.0.15.jar",
+   "target": "Charm-1.12.2-1.4.1.jar",
+   "kinds": {
+    "patch": 8
+   },
+   "why": [
+    "Правки або сумісність із кодом svenhjol/charm/crafting"
+   ]
+  },
+  {
+   "source": "Localizator-1.12.2-1.0.15.jar",
+   "target": "EnhancedVisuals_v1.4.4_mc1.12.2.jar",
+   "kinds": {
+    "patch": 5
+   },
+   "why": [
+    "Правки або сумісність із кодом team/creative/enhancedvisuals"
+   ]
+  },
+  {
+   "source": "Localizator-1.12.2-1.0.15.jar",
+   "target": "Hwyla-1.8.26-B41_1.12.2.jar",
+   "kinds": {
+    "patch": 10
+   },
+   "why": [
+    "Правки або сумісність із кодом mcp/mobius/waila"
+   ]
+  },
+  {
+   "source": "Localizator-1.12.2-1.0.15.jar",
+   "target": "jei_1.12.2-4.24.0.1043.jar",
+   "kinds": {
+    "patch": 5
+   },
+   "why": [
+    "Правки або сумісність із кодом mezz/jei/gui"
+   ]
+  },
+  {
+   "source": "naughthirium-3.0.0.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "code": 8
+   },
+   "why": [
+    "Звертається до класів zone/rong/mixinbooter"
+   ]
+  },
+  {
+   "source": "naughthirium-3.0.0.jar",
+   "target": "chibi-5.34.jar",
+   "kinds": {
+    "code": 8
+   },
+   "why": [
+    "Звертається до класів zone/rong/loliasm"
+   ]
+  },
+  {
+   "source": "naughthirium-3.0.0.jar",
+   "target": "CreativeCore_v1.10.71_mc1.12.2.jar",
+   "kinds": {
+    "code": 1
+   },
+   "why": [
+    "Звертається до класів com/creativemd/creativecore"
+   ]
+  },
+  {
+   "source": "naughthirium-3.0.0.jar",
+   "target": "Nothirium-1.12.2-0.4.9-beta.jar",
+   "kinds": {
+    "code": 22
+   },
+   "why": [
+    "Звертається до класів meldexun/nothirium/mc"
+   ]
+  },
+  {
+   "source": "Nether-API-v1.5.4-mc1.12.2.jar",
+   "target": "DynamicSurroundings-1.12.2-3.6.3.jar",
+   "kinds": {
+    "code": 12
+   },
+   "why": [
+    "Звертається до класів org/orecruncher/dsurround"
+   ]
+  },
+  {
+   "source": "Nether-API-v1.5.4-mc1.12.2.jar",
+   "target": "OreLib-1.12.2-3.6.0.1.jar",
+   "kinds": {
+    "code": 11
+   },
+   "why": [
+    "Звертається до класів org/orecruncher/lib"
+   ]
+  },
+  {
+   "source": "netherportalspread_1.12.2-5.4.jar",
+   "target": "collective-1.12.2-3.0.jar",
+   "kinds": {
+    "code": 12
+   },
+   "why": [
+    "Звертається до класів com/natamus/collective"
+   ]
+  },
+  {
+   "source": "Nothirium-1.12.2-0.4.9-beta.jar",
+   "target": "Fluidlogged-API-v3.3.3-mc1.12.2.jar",
+   "kinds": {
+    "code": 6
+   },
+   "why": [
+    "Звертається до класів git/jbredwards/fluidlogged_api"
+   ]
+  },
+  {
+   "source": "OreStages-1.12.2-2.0.38.jar",
+   "target": "Hwyla-1.8.26-B41_1.12.2.jar",
+   "kinds": {
+    "code": 16
+   },
+   "why": [
+    "Звертається до класів mcp/mobius/waila"
+   ]
+  },
+  {
+   "source": "Patchouli-1.0-23.6.jar",
+   "target": "BNBGamingCore-1.12.2-0.12.0.jar",
+   "kinds": {
+    "code": 3
+   },
+   "why": [
+    "Звертається до класів com/bloodnbonesgaming/bnbgamingcore"
+   ]
+  },
+  {
+   "source": "pollutantpump-1.12.2-1.3.0.jar",
+   "target": "ForgeEndertech-1.12.2-4.5.6.1-build.0648.jar",
+   "kinds": {
+    "code": 4
+   },
+   "why": [
+    "Звертається до класів com/endertech/minecraft/forge"
+   ]
+  },
+  {
+   "source": "pulsar-0.6.7-beta.jar",
+   "target": "Fluidlogged-API-v3.3.3-mc1.12.2.jar",
+   "kinds": {
+    "code": 25
+   },
+   "why": [
+    "Звертається до класів git/jbredwards/fluidlogged_api"
+   ]
+  },
+  {
+   "source": "RecipeStages-1.1.3.8.jar",
+   "target": "Bookshelf-1.12.2-2.3.590.jar",
+   "kinds": {
+    "code": 2
+   },
+   "why": [
+    "Звертається до класів net/darkhax/bookshelf"
+   ]
+  },
+  {
+   "source": "RecipeStages-1.1.3.8.jar",
+   "target": "jei_1.12.2-4.24.0.1043.jar",
+   "kinds": {
+    "code": 3
+   },
+   "why": [
+    "Звертається до класів mezz/jei/plugins"
+   ]
+  },
+  {
+   "source": "Redstone++ ver1.3e.jar",
+   "target": "jei_1.12.2-4.24.0.1043.jar",
+   "kinds": {
+    "code": 8
+   },
+   "why": [
+    "Звертається до класів mezz/jei/api"
+   ]
+  },
+  {
+   "source": "SnowRealMagic-1.12.2-0.7.4.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "code": 15
+   },
+   "why": [
+    "Звертається до класів org/jetbrains/java"
+   ]
+  },
+  {
+   "source": "Spacesuit Required 1.0.2 1.12.2 Forge.jar",
+   "target": "AsmodeusCore-1.12.2-1.0.2.jar",
+   "kinds": {
+    "code": 4
+   },
+   "why": [
+    "Звертається до класів asmodeuscore/core/astronomy"
+   ]
+  },
+  {
+   "source": "Spacesuit Required 1.0.2 1.12.2 Forge.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "code": 7
+   },
+   "why": [
+    "Звертається до класів micdoodle8/mods/galacticraft"
+   ]
+  },
+  {
+   "source": "tabulator-1.0.3.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "code": 2
+   },
+   "why": [
+    "Звертається до класів zone/rong/mixinbooter"
+   ]
+  },
+  {
+   "source": "TradeStages Legacy-1.1.2.jar",
+   "target": "GameStages-1.12.2-2.0.123.jar",
+   "kinds": {
+    "code": 2
+   },
+   "why": [
+    "Звертається до класів net/darkhax/gamestages"
+   ]
+  },
+  {
+   "source": "UniversalTweaks-1.12.2-1.21.0.jar",
+   "target": "base-1.12.2-3.14.0.jar",
+   "kinds": {
+    "patch": 3
+   },
+   "why": [
+    "Правки або сумісність із кодом com/teamacronymcoders/base"
+   ]
+  },
+  {
+   "source": "UniversalTweaks-1.12.2-1.21.0.jar",
+   "target": "Bookshelf-1.12.2-2.3.590.jar",
+   "kinds": {
+    "patch": 1
+   },
+   "why": [
+    "Правки або сумісність із кодом net/darkhax/bookshelf"
+   ]
+  },
+  {
+   "source": "UniversalTweaks-1.12.2-1.21.0.jar",
+   "target": "FpsReducer-mc1.12.2-1.20.jar",
+   "kinds": {
+    "patch": 1
+   },
+   "why": [
+    "Правки або сумісність із кодом bre/fpsreducer"
+   ]
+  },
+  {
+   "source": "UniversalTweaks-1.12.2-1.21.0.jar",
+   "target": "jei_1.12.2-4.24.0.1043.jar",
+   "kinds": {
+    "patch": 11
+   },
+   "why": [
+    "Правки або сумісність із кодом mezz/jei/api"
+   ]
+  },
+  {
+   "source": "UniversalTweaks-1.12.2-1.21.0.jar",
+   "target": "Patchouli-1.0-23.6.jar",
+   "kinds": {
+    "patch": 1
+   },
+   "why": [
+    "Правки або сумісність із кодом vazkii/patchouli/common"
+   ]
+  },
+  {
+   "source": "WolfArmorAndStorage-3.8.1+1.12.2.alpha.1-SNAPSHOT-signed.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "code": 15
+   },
+   "why": [
+    "Звертається до класів org/jetbrains/java"
+   ]
+  },
+  {
+   "source": "ContentTweaker-1.12.2-4.10.0.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "recipe": 1
+   },
+   "why": [
+    "Рецепт contenttweaker:scufford (recipes.zs) вимагає предмет із galacticraftcore"
+   ]
+  },
+  {
+   "source": "funtnt-1.12.2.0.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "recipe": 1
+   },
+   "why": [
+    "Рецепт funtnt:tnt_nuke (recipes.zs) вимагає предмет із galacticraftplanets"
+   ]
+  },
+  {
+   "source": "Quark-r1.6-179.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "recipe": 3
+   },
+   "why": [
+    "Рецепт quark:iron_plate (recipes.zs) вимагає предмет із galacticraftcore",
+    "Рецепт quark:iron_plate:1 (recipes.zs) вимагає предмет із galacticraftcore",
+    "Рецепт quark:root_dye:1 (recipes.zs) вимагає предмет із galacticraftplanets"
+   ]
+  },
+  {
+   "source": "Galacticraft-1.12.2-4.0.6.jar",
+   "target": "GalaxySpace-1.12.2-2.1.4.jar",
+   "kinds": {
+    "recipe": 1
+   },
+   "why": [
+    "Рецепт galacticraftplanets:basic_item_venus:2 (recipes.zs) вимагає предмет із galaxyspace"
+   ]
+  },
+  {
+   "source": "GalaxySpace-1.12.2-2.1.4.jar",
+   "target": "Quark-r1.6-179.jar",
+   "kinds": {
+    "recipe": 3
+   },
+   "why": [
+    "Рецепт galaxyspace:futureglass:15 (recipes.zs) вимагає предмет із quark",
+    "Рецепт galaxyspace:futureglass:4 (recipes.zs) вимагає предмет із quark",
+    "Рецепт galaxyspace:futureglass (recipes.zs) вимагає предмет із quark"
+   ]
+  },
+  {
+   "source": "Triumph-1.12.2-3.19.2.jar",
+   "target": "Bountiful-1.12.2-2.2.3.jar",
+   "kinds": {
+    "progress": 3
+   },
+   "why": [
+    "3 досягнень Triumph вимагають предмети або виміри цього мода"
+   ]
+  },
+  {
+   "source": "Triumph-1.12.2-3.19.2.jar",
+   "target": "Charm-1.12.2-1.4.1.jar",
+   "kinds": {
+    "progress": 7
+   },
+   "why": [
+    "7 досягнень Triumph вимагають предмети або виміри цього мода"
+   ]
+  },
+  {
+   "source": "Triumph-1.12.2-3.19.2.jar",
+   "target": "GalaxySpace-1.12.2-2.1.4.jar",
+   "kinds": {
+    "progress": 39
+   },
+   "why": [
+    "39 досягнень Triumph вимагають предмети або виміри цього мода"
+   ]
+  },
+  {
+   "source": "Triumph-1.12.2-3.19.2.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "progress": 52
+   },
+   "why": [
+    "12 досягнень Triumph вимагають предмети або виміри цього мода",
+    "40 досягнень Triumph вимагають предмети або виміри цього мода"
+   ]
+  },
+  {
+   "source": "Triumph-1.12.2-3.19.2.jar",
+   "target": "funtnt-1.12.2.0.jar",
+   "kinds": {
+    "progress": 1
+   },
+   "why": [
+    "1 досягнень Triumph вимагають предмети або виміри цього мода"
+   ]
+  },
+  {
+   "source": "Triumph-1.12.2-3.19.2.jar",
+   "target": "AdPother-1.12.2-1.2.25.0-build.0673.jar",
+   "kinds": {
+    "progress": 13
+   },
+   "why": [
+    "13 досягнень Triumph вимагають предмети або виміри цього мода"
+   ]
+  },
+  {
+   "source": "Triumph-1.12.2-3.19.2.jar",
+   "target": "pollutantpump-1.12.2-1.3.0.jar",
+   "kinds": {
+    "progress": 1
+   },
+   "why": [
+    "1 досягнень Triumph вимагають предмети або виміри цього мода"
+   ]
+  },
+  {
+   "source": "Triumph-1.12.2-3.19.2.jar",
+   "target": "Quark-r1.6-179.jar",
+   "kinds": {
+    "progress": 9
+   },
+   "why": [
+    "9 досягнень Triumph вимагають предмети або виміри цього мода"
+   ]
+  },
+  {
+   "source": "Triumph-1.12.2-3.19.2.jar",
+   "target": "GalacticResearch-1.1.3.jar",
+   "kinds": {
+    "progress": 1
+   },
+   "why": [
+    "1 досягнень Triumph вимагають предмети або виміри цього мода"
+   ]
+  },
+  {
+   "source": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "target": "AdChimneys-1.12.2-3.5.16.0-build.0654.jar",
+   "kinds": {
+    "script": 2
+   },
+   "why": [
+    "Скрипт creative_tabs.zs використовує предмети adchimneys",
+    "Скрипт recipes.zs використовує предмети adchimneys"
+   ]
+  },
+  {
+   "source": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "target": "useful_railroads-1.12.2-1.1.3.24.jar",
+   "kinds": {
+    "script": 2
+   },
+   "why": [
+    "Скрипт creative_tabs.zs використовує предмети usefulrailroads",
+    "Скрипт recipes.zs використовує предмети usefulrailroads"
+   ]
+  },
+  {
+   "source": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "target": "GalaxySpace-1.12.2-2.1.4.jar",
+   "kinds": {
+    "script": 5,
+    "role": 1
+   },
+   "why": [
+    "Скрипт creative_tabs.zs використовує предмети galaxyspace",
+    "Скрипт loot.zs використовує предмети galaxyspace",
+    "Скрипт planet_roles.zs використовує предмети galaxyspace",
+    "Скрипт progress_stages.zs використовує предмети galaxyspace",
+    "Скрипт recipes.zs використовує предмети galaxyspace"
+   ]
+  },
+  {
+   "source": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "target": "Quark-r1.6-179.jar",
+   "kinds": {
+    "script": 2
+   },
+   "why": [
+    "Скрипт elytra_repair.zs використовує предмети quark",
+    "Скрипт recipes.zs використовує предмети quark"
+   ]
+  },
+  {
+   "source": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "script": 7
+   },
+   "why": [
+    "Скрипт loot.zs використовує предмети galacticraftplanets",
+    "Скрипт planet_roles.zs використовує предмети galacticraftcore",
+    "Скрипт planet_roles.zs використовує предмети galacticraftplanets",
+    "Скрипт progress_stages.zs використовує предмети galacticraftplanets",
+    "Скрипт recipes.zs використовує предмети galacticraftcore"
+   ]
+  },
+  {
+   "source": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "target": "funtnt-1.12.2.0.jar",
+   "kinds": {
+    "script": 1
+   },
+   "why": [
+    "Скрипт recipes.zs використовує предмети funtnt"
+   ]
+  },
+  {
+   "source": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "target": "ContentTweaker-1.12.2-4.10.0.jar",
+   "kinds": {
+    "script": 1
+   },
+   "why": [
+    "Скрипт recipes.zs використовує предмети contenttweaker"
+   ]
+  },
+  {
+   "source": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "target": "Patchouli-1.0-23.6.jar",
+   "kinds": {
+    "script": 1,
+    "role": 1
+   },
+   "why": [
+    "Скрипт research_guide.zs використовує предмети patchouli",
+    "research_guide.zs видає цю книгу за перший чип"
+   ]
+  },
+  {
+   "source": "LootTweaker-0.5.1+MC1.12.2-DLS0.jar",
+   "target": "GalaxySpace-1.12.2-2.1.4.jar",
+   "kinds": {
+    "script": 1
+   },
+   "why": [
+    "loot.zs прибирає плазмову комірку зі скарбниць 4–5 рівнів"
+   ]
+  },
+  {
+   "source": "tabulator-1.0.3.jar",
+   "target": "GalaxySpace-1.12.2-2.1.4.jar",
+   "kinds": {
+    "script": 1
+   },
+   "why": [
+    "creative_tabs.zs ховає вимкнені предмети GalaxySpace (лише в клієнті)"
+   ]
+  },
+  {
+   "source": "tabulator-1.0.3.jar",
+   "target": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "kinds": {
+    "script": 1
+   },
+   "why": [
+    "creative_tabs.zs викликає Tabs; #sideonly client, бо на сервері Tabulator обривав recipes.zs"
+   ]
+  },
+  {
+   "source": "Spacesuit Required 1.0.2 1.12.2 Forge.jar",
+   "target": "GalaxySpace-1.12.2-2.1.4.jar",
+   "kinds": {
+    "role": 1
+   },
+   "why": [
+    "Вимагає скафандр у просторі GalaxySpace"
+   ]
+  },
+  {
+   "source": "GalacticResearch-1.1.3.jar",
+   "target": "Patchouli-1.0-23.6.jar",
+   "kinds": {
+    "role": 1
+   },
+   "why": [
+    "Посібник дослідження написано як книгу Patchouli"
+   ]
+  },
+  {
+   "source": "AdChimneys-1.12.2-3.5.16.0-build.0654.jar",
+   "target": "AdPother-1.12.2-1.2.25.0-build.0673.jar",
+   "kinds": {
+    "role": 1
+   },
+   "why": [
+    "Димарі відводять дим механіки забруднення"
+   ]
+  },
+  {
+   "source": "funtnt-1.12.2.0.jar",
+   "target": "GalaxySpace-1.12.2-2.1.4.jar",
+   "kinds": {
+    "role": 1
+   },
+   "why": [
+    "Для бомби потрібні уранові уламки, стиснені в компресорі"
+   ]
+  },
+  {
+   "source": "Bountiful-1.12.2-2.2.3.jar",
+   "target": "Triumph-1.12.2-3.19.2.jar",
+   "kinds": {
+    "role": 1
+   },
+   "why": [
+    "Гілка досягнень за виконані замовлення"
+   ]
+  },
+  {
+   "source": "QuarkOddities-1.12.2.jar",
+   "target": "Quark-r1.6-179.jar",
+   "kinds": {
+    "role": 1
+   },
+   "why": [
+    "Додаток до Quark, власного коду в jar-файлі немає"
+   ]
+  },
+  {
+   "source": "2P2Rcompat-1.0.0.jar",
+   "target": "Spacesuit Required 1.0.2 1.12.2 Forge.jar",
+   "kinds": {
+    "role": 1
+   },
+   "why": [
+    "Перекладає попередження й захищає гравця в дихабельному повітрі"
+   ]
+  },
+  {
+   "source": "2P2Rcompat-1.0.0.jar",
+   "target": "Tips-1.12.2-1.0.9.jar",
+   "kinds": {
+    "role": 1
+   },
+   "why": [
+    "Містить переклад порад двома мовами"
+   ]
+  },
+  {
+   "source": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "target": "GalacticResearch-1.1.3.jar",
+   "kinds": {
+    "role": 1
+   },
+   "why": [
+    "planet_research.zs читає завершені дослідження"
+   ]
+  },
+  {
+   "source": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "target": "Triumph-1.12.2-3.19.2.jar",
+   "kinds": {
+    "role": 1
+   },
+   "why": [
+    "planet_research.zs видає досягнення за дослідження"
+   ]
+  },
+  {
+   "source": "Patchouli-1.0-23.6.jar",
+   "target": "Triumph-1.12.2-3.19.2.jar",
+   "kinds": {
+    "role": 1
+   },
+   "why": [
+    "Записи книги відкриваються за досягненнями Triumph"
+   ]
+  },
+  {
+   "source": "2P2Rcompat-1.0.0.jar",
+   "target": "pulsar-0.6.7-beta.jar",
+   "kinds": {
+    "role": 2
+   },
+   "why": [
+    "Прибирає темні кути, кешує кольорове світло частинок і повертає серверу методи чанка, без яких Pulsar падав при вході гравця",
+    "Сервер не падає, коли гравець заходить у кольоровому режимі освітлення Pulsar"
+   ]
+  },
+  {
+   "source": "2P2Rcompat-1.0.0.jar",
+   "target": "useful_railroads-1.12.2-1.1.3.24.jar",
+   "kinds": {
+    "role": 1
+   },
+   "why": [
+    "Швидкісні рейки на схилах"
+   ]
+  },
+  {
+   "source": "2P2Rcompat-1.0.0.jar",
+   "target": "Future-MC-0.2.21.jar",
+   "kinds": {
+    "role": 1
+   },
+   "why": [
+    "F3+F4 більше не викидає з гри"
+   ]
+  },
+  {
+   "source": "2P2Rcompat-1.0.0.jar",
+   "target": "AdPother-1.12.2-1.2.25.0-build.0673.jar",
+   "kinds": {
+    "role": 1
+   },
+   "why": [
+    "Горіння газів і рідин дає вуглекислий газ і сірку"
+   ]
+  },
+  {
+   "source": "rockytweaks-1.12.2-0.6.1.jar",
+   "target": "Quark-r1.6-179.jar",
+   "kinds": {
+    "role": 1
+   },
+   "why": [
+    "elytra_repair.zs: блок біотиту ремонтує елітри на ковадлі"
+   ]
+  },
+  {
+   "source": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "target": "GameStages-1.12.2-2.0.123.jar",
+   "kinds": {
+    "role": 1
+   },
+   "why": [
+    "progress_stages.zs видає етапи за висадки"
+   ]
+  },
+  {
+   "source": "darkness-forge-1.12.x-0.5.0.jar",
+   "target": "pulsar-0.6.7-beta.jar",
+   "kinds": {
+    "role": 1
+   },
+   "why": [
+    "Обидва змінюють освітлення: темрява накладається на світло Pulsar"
+   ]
+  },
+  {
+   "source": "Quark-r1.6-179.jar",
+   "target": "brokenwings-3.0.0.jar",
+   "kinds": {
+    "role": 1
+   },
+   "why": [
+    "Луска дракона й біотит дають елітри, які обмежує Broken Wings"
+   ]
+  },
+  {
+   "source": "zume-1.2.2.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "code": 1
+   },
+   "why": [
+    "Міксини Zume підключаються через MixinTweaker, який дає вбудований у Cleanroom CleanMix"
+   ]
+  },
+  {
+   "source": "AdChimneys-1.12.2-3.5.16.0-build.0654.jar",
+   "target": "Quark-r1.6-179.jar",
+   "kinds": {
+    "config": 84
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки quark"
+   ]
+  },
+  {
+   "source": "AdChimneys-1.12.2-3.5.16.0-build.0654.jar",
+   "target": "Future-MC-0.2.21.jar",
+   "kinds": {
+    "config": 4
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки futuremc"
+   ]
+  },
+  {
+   "source": "AdChimneys-1.12.2-3.5.16.0-build.0654.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "config": 4
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки galacticraftcore"
+   ]
+  },
+  {
+   "source": "AdPother-1.12.2-1.2.25.0-build.0673.jar",
+   "target": "Future-MC-0.2.21.jar",
+   "kinds": {
+    "config": 4
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки futuremc"
+   ]
+  },
+  {
+   "source": "AdPother-1.12.2-1.2.25.0-build.0673.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "config": 9
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки galacticraftcore",
+    "Налаштування згадують предмети або блоки galacticraftplanets"
+   ]
+  },
+  {
+   "source": "AdPother-1.12.2-1.2.25.0-build.0673.jar",
+   "target": "GalaxySpace-1.12.2-2.1.4.jar",
+   "kinds": {
+    "config": 7
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки galaxyspace"
+   ]
+  },
+  {
+   "source": "antiqueatlas-1.12.2-4.6.3.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "config": 3
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки galacticraftcore",
+    "Налаштування згадують предмети або блоки galacticraftplanets"
+   ]
+  },
+  {
+   "source": "antiqueatlas-1.12.2-4.6.3.jar",
+   "target": "GalaxySpace-1.12.2-2.1.4.jar",
+   "kinds": {
+    "config": 5
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки galaxyspace"
+   ]
+  },
+  {
+   "source": "antiqueatlas-1.12.2-4.6.3.jar",
+   "target": "AtlasExtras-1.12.2-1.8.jar",
+   "kinds": {
+    "config": 3
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки atlasextras"
+   ]
+  },
+  {
+   "source": "AntiqueAtlasAutoMarker-1.6.1.4.jar",
+   "target": "Charm-1.12.2-1.4.1.jar",
+   "kinds": {
+    "config": 2
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки charm"
+   ]
+  },
+  {
+   "source": "Bountiful-1.12.2-2.2.3.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "config": 25
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки galacticraftcore",
+    "Налаштування згадують предмети або блоки galacticraftplanets"
+   ]
+  },
+  {
+   "source": "Bountiful-1.12.2-2.2.3.jar",
+   "target": "GalaxySpace-1.12.2-2.1.4.jar",
+   "kinds": {
+    "config": 20
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки galaxyspace"
+   ]
+  },
+  {
+   "source": "Charm-1.12.2-1.4.1.jar",
+   "target": "Future-MC-0.2.21.jar",
+   "kinds": {
+    "config": 4
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки futuremc"
+   ]
+  },
+  {
+   "source": "Fluidlogged-API-v3.3.3-mc1.12.2.jar",
+   "target": "GalaxySpace-1.12.2-2.1.4.jar",
+   "kinds": {
+    "config": 9
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки galaxyspace"
+   ]
+  },
+  {
+   "source": "Fluidlogged-API-v3.3.3-mc1.12.2.jar",
+   "target": "GalacticResearch-1.1.3.jar",
+   "kinds": {
+    "config": 2
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки galacticresearch"
+   ]
+  },
+  {
+   "source": "Fluidlogged-API-v3.3.3-mc1.12.2.jar",
+   "target": "Quark-r1.6-179.jar",
+   "kinds": {
+    "config": 71
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки quark"
+   ]
+  },
+  {
+   "source": "Fluidlogged-API-v3.3.3-mc1.12.2.jar",
+   "target": "pollutantpump-1.12.2-1.3.0.jar",
+   "kinds": {
+    "config": 1
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки pollutantpump"
+   ]
+  },
+  {
+   "source": "JustEnoughResources-1.12.2-0.9.3.203.jar",
+   "target": "GalaxySpace-1.12.2-2.1.4.jar",
+   "kinds": {
+    "config": 147
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки galaxyspace"
+   ]
+  },
+  {
+   "source": "JustEnoughResources-1.12.2-0.9.3.203.jar",
+   "target": "Quark-r1.6-179.jar",
+   "kinds": {
+    "config": 27
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки quark"
+   ]
+  },
+  {
+   "source": "JustEnoughResources-1.12.2-0.9.3.203.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "config": 87
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки galacticraftcore",
+    "Налаштування згадують предмети або блоки galacticraftplanets"
+   ]
+  },
+  {
+   "source": "specialai_1.1.0_for_mc1.12.2.jar",
+   "target": "Quark-r1.6-179.jar",
+   "kinds": {
+    "config": 55
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки quark"
+   ]
+  },
+  {
+   "source": "specialai_1.1.0_for_mc1.12.2.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "config": 27
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки galacticraftplanets",
+    "Налаштування згадують предмети або блоки galacticraftcore"
+   ]
+  },
+  {
+   "source": "specialai_1.1.0_for_mc1.12.2.jar",
+   "target": "cosmeticbeds-1.12.2-1.0.2.2.jar",
+   "kinds": {
+    "config": 4
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки cosmeticbeds"
+   ]
+  },
+  {
+   "source": "specialai_1.1.0_for_mc1.12.2.jar",
+   "target": "AdChimneys-1.12.2-3.5.16.0-build.0654.jar",
+   "kinds": {
+    "config": 1
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки adchimneys"
+   ]
+  },
+  {
+   "source": "specialai_1.1.0_for_mc1.12.2.jar",
+   "target": "GalaxySpace-1.12.2-2.1.4.jar",
+   "kinds": {
+    "config": 18
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки galaxyspace"
+   ]
+  },
+  {
+   "source": "specialai_1.1.0_for_mc1.12.2.jar",
+   "target": "funtnt-1.12.2.0.jar",
+   "kinds": {
+    "config": 5
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки funtnt"
+   ]
+  },
+  {
+   "source": "specialai_1.1.0_for_mc1.12.2.jar",
+   "target": "AquaAcrobatics-1.15.4.jar",
+   "kinds": {
+    "config": 1
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки aquaacrobatics"
+   ]
+  },
+  {
+   "source": "specialai_1.1.0_for_mc1.12.2.jar",
+   "target": "bubble_columns_backport-1.0.7.jar",
+   "kinds": {
+    "config": 2
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки 113_water_mechanics"
+   ]
+  },
+  {
+   "source": "specialai_1.1.0_for_mc1.12.2.jar",
+   "target": "Redstone++ ver1.3e.jar",
+   "kinds": {
+    "config": 7
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки redstoneplusplus"
+   ]
+  },
+  {
+   "source": "specialai_1.1.0_for_mc1.12.2.jar",
+   "target": "useful_railroads-1.12.2-1.1.3.24.jar",
+   "kinds": {
+    "config": 4
+   },
+   "why": [
+    "Налаштування згадують предмети або блоки usefulrailroads"
+   ]
+  },
+  {
+   "source": "ResourceLoader-MC1.12.1-1.5.3.jar",
+   "target": "Patchouli-1.0-23.6.jar",
+   "kinds": {
+    "config": 1
+   },
+   "why": [
+    "Завантажує файли цього мода з теки resources/testbook"
+   ]
+  },
+  {
+   "source": "ResourceLoader-MC1.12.1-1.5.3.jar",
+   "target": "Triumph-1.12.2-3.19.2.jar",
+   "kinds": {
+    "config": 1
+   },
+   "why": [
+    "Завантажує файли цього мода з теки resources/triumph"
+   ]
+  },
+  {
+   "source": "ResourceLoader-MC1.12.1-1.5.3.jar",
+   "target": "ContentTweaker-1.12.2-4.10.0.jar",
+   "kinds": {
+    "config": 1
+   },
+   "why": [
+    "Завантажує файли цього мода з теки resources/contenttweaker"
+   ]
+  },
+  {
+   "source": "ResourceLoader-MC1.12.1-1.5.3.jar",
+   "target": "EnhancedVisuals_v1.4.4_mc1.12.2.jar",
+   "kinds": {
+    "config": 1
+   },
+   "why": [
+    "Завантажує файли цього мода з теки resources/enhancedvisuals"
+   ]
+  },
+  {
+   "source": "ResourceLoader-MC1.12.1-1.5.3.jar",
+   "target": "Redstone++ ver1.3e.jar",
+   "kinds": {
+    "config": 1
+   },
+   "why": [
+    "Завантажує файли цього мода з теки resources/redstoneplusplus"
+   ]
+  },
+  {
+   "source": "brokenwings-3.0.0.jar",
+   "target": "Galacticraft-1.12.2-4.0.6.jar",
+   "kinds": {
+    "config": 1
+   },
+   "why": [
+    "brokenwings.cfg дозволяє елітри лише у Верхньому світі та в Енді"
+   ]
+  },
+  {
+   "source": "CustomLoadingScreen-1.12.2-1.5.9.jar",
+   "target": "Tips-1.12.2-1.0.9.jar",
+   "kinds": {
+    "config": 1
+   },
+   "why": [
+    "customloadingscreen_tips.txt показує поради на екрані завантаження"
+   ]
+  },
+  {
+   "source": "-mixinbooter-12.4.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "loader": 1
+   },
+   "why": [
+    "Той самий MixinBooter уже вбудований у Cleanroom"
+   ]
+  },
+  {
+   "source": "-configanytime-3.0.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "loader": 1
+   },
+   "why": [
+    "Той самий ConfigAnytime уже вбудований у Cleanroom"
+   ]
+  },
+  {
+   "source": "Scalar Legacy-1.0.1.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "loader": 1
+   },
+   "why": [
+    "Мова Scala завантажується разом із грою; без неї збірка не запускається"
+   ]
+  },
+  {
+   "source": "portalsupercache-0.2.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "loader": 1
+   },
+   "why": [
+    "Працює напряму з грою, власних залежностей немає"
+   ]
+  },
+  {
+   "source": "AquaCreepers-1.2.3.jar",
+   "target": "specialai_1.1.0_for_mc1.12.2.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: вороги й бій"
+   ]
+  },
+  {
+   "source": "BadMobs-1.12.2-1.1.40.jar",
+   "target": "specialai_1.1.0_for_mc1.12.2.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: вороги й бій"
+   ]
+  },
+  {
+   "source": "boatmobs-1.12.2-1.1.jar",
+   "target": "specialai_1.1.0_for_mc1.12.2.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: вороги й бій"
+   ]
+  },
+  {
+   "source": "scarper-1.1.jar",
+   "target": "specialai_1.1.0_for_mc1.12.2.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: вороги й бій"
+   ]
+  },
+  {
+   "source": "ShieldBreak-1.2.3.jar",
+   "target": "specialai_1.1.0_for_mc1.12.2.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: вороги й бій"
+   ]
+  },
+  {
+   "source": "betterendcities-1.2.0-forge-1.12.2.jar",
+   "target": "BiomeSpecificDungeons-1.12.2-1.0.3.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: споруди й підземелля"
+   ]
+  },
+  {
+   "source": "bettermonuments-1.2.0-forge-1.12.2.jar",
+   "target": "BiomeSpecificDungeons-1.12.2-1.0.3.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: споруди й підземелля"
+   ]
+  },
+  {
+   "source": "Rex's-AdditionalStructures-1.12.x(v.2.5.0).jar",
+   "target": "BiomeSpecificDungeons-1.12.2-1.0.3.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: споруди й підземелля"
+   ]
+  },
+  {
+   "source": "despawningspawners-1.12-1.2.0-2.jar",
+   "target": "BiomeSpecificDungeons-1.12.2-1.0.3.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: споруди й підземелля"
+   ]
+  },
+  {
+   "source": "Regrowth-1.12.2-0.0.1.1.jar",
+   "target": "SnowRealMagic-1.12.2-0.7.4.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: жива природа"
+   ]
+  },
+  {
+   "source": "tumbleweed-1.12-0.4.7.jar",
+   "target": "SnowRealMagic-1.12.2-0.7.4.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: жива природа"
+   ]
+  },
+  {
+   "source": "EyesInTheDarkness-0.1.0.jar",
+   "target": "darkness-forge-1.12.x-0.5.0.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: темрява"
+   ]
+  },
+  {
+   "source": "AmbientEnvironment_1.12.2_1.0.2.jar",
+   "target": "DynamicSurroundings-1.12.2-3.6.3.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: звук і атмосфера"
+   ]
+  },
+  {
+   "source": "SoundFilters-0.14.0_for_1.12.jar",
+   "target": "DynamicSurroundings-1.12.2-3.6.3.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: звук і атмосфера"
+   ]
+  },
+  {
+   "source": "betterinvisibility-1.12.2-1.0.5.jar",
+   "target": "EnhancedVisuals_v1.4.4_mc1.12.2.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: ефекти на екрані"
+   ]
+  },
+  {
+   "source": "CollisionDamage-1.2.2.jar",
+   "target": "EnhancedVisuals_v1.4.4_mc1.12.2.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: ефекти на екрані"
+   ]
+  },
+  {
+   "source": "Super+Hot+1.1.jar",
+   "target": "Spacesuit Required 1.0.2 1.12.2 Forge.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: небезпеки виживання"
+   ]
+  },
+  {
+   "source": "EntityCulling-1.12.2-6.5.0.jar",
+   "target": "Nothirium-1.12.2-0.4.9-beta.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: продуктивність рендерингу"
+   ]
+  },
+  {
+   "source": "particleculling-1.12.2-v1.4.3.jar",
+   "target": "Nothirium-1.12.2-0.4.9-beta.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: продуктивність рендерингу"
+   ]
+  },
+  {
+   "source": "FpsReducer-mc1.12.2-1.20.jar",
+   "target": "Nothirium-1.12.2-0.4.9-beta.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: продуктивність рендерингу"
+   ]
+  },
+  {
+   "source": "celeritasextra-0.11.3-beta.jar",
+   "target": "Nothirium-1.12.2-0.4.9-beta.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: продуктивність рендерингу"
+   ]
+  },
+  {
+   "source": "naughthirium-3.0.0.jar",
+   "target": "Nothirium-1.12.2-0.4.9-beta.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: продуктивність рендерингу"
+   ]
+  },
+  {
+   "source": "cit_recrafted-0.1.0.jar",
+   "target": "CTM-MC1.12.2-1.0.2.31.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: текстури з ресурспаків"
+   ]
+  },
+  {
+   "source": "friendly_chests_nofluid-1.0.2.jar",
+   "target": "Quark-r1.6-179.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: скрині й інвентар"
+   ]
+  },
+  {
+   "source": "stacksize-1.12.2-1.0.jar",
+   "target": "Quark-r1.6-179.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: скрині й інвентар"
+   ]
+  },
+  {
+   "source": "betterchat-1.4.jar",
+   "target": "chat_heads-0.1.3.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: чат"
+   ]
+  },
+  {
+   "source": "namepain-1.5.0 forge-1.12.x.jar",
+   "target": "Hwyla-1.8.26-B41_1.12.2.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: підказки в інтерфейсі"
+   ]
+  },
+  {
+   "source": "keywizard-1.12.2-1.7.3.jar",
+   "target": "jei_1.12.2-4.24.0.1043.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: керування"
+   ]
+  },
+  {
+   "source": "legacy-advdebug-2.3.0.jar",
+   "target": "Triumph-1.12.2-3.19.2.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: налагодження досягнень"
+   ]
+  },
+  {
+   "source": "itlt-1.12.x-1.0.4.jar",
+   "target": "CustomLoadingScreen-1.12.2-1.5.9.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: оформлення запуску"
+   ]
+  },
+  {
+   "source": "Loading-Progress-Bar-v1.0-mc[1.8-1.12.2].jar",
+   "target": "CustomLoadingScreen-1.12.2-1.5.9.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: оформлення запуску"
+   ]
+  },
+  {
+   "source": "screenshot_viewer-1.1.1-forge-mc1.12.2.jar",
+   "target": "betterchat-1.4.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: зображення в грі"
+   ]
+  },
+  {
+   "source": "SignPicture-1.12.1-2.8.1-universal.jar",
+   "target": "screenshot_viewer-1.1.1-forge-mc1.12.2.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: зображення в грі"
+   ]
+  },
+  {
+   "source": "2P2Rcompat-1.0.0.jar",
+   "target": "sarosskinchanger-1.2.jar",
+   "kinds": {
+    "optional": 1,
+    "code": 4,
+    "role": 3
+   },
+   "why": [
+    "Необов'язково, якщо є: sarosskinchanger",
+    "Звертається до класів com/sarocesch/sarosskinchanger",
+    "Кожен гравець має власний скін замість спільного steve.png — більше немає білих скінів",
+    "Сервер розсилає збережені скіни при вході, тож вони не скидаються після перезапуску",
+    "Перекладає німецький та англійський текст вікна скінів українською"
+   ]
+  },
+  {
+   "source": "2P2Rcompat-1.0.0.jar",
+   "target": "SignPicture-1.12.1-2.8.1-universal.jar",
+   "kinds": {
+    "code": 4,
+    "role": 2
+   },
+   "why": [
+    "Звертається до класів com/kamesuta/mc/signpic",
+    "Довгі посилання (e621, Discord) зберігаються на сервері й скорочуються, бо goo.gl і bit.ly мертві",
+    "Кнопка «Вивантажити» шле картинку з комп'ютера на сервер збірки замість мертвих Gyazo й Imgur"
+   ]
+  },
+  {
+   "source": "roomfortwo-forge-1.12.2-0.3.1.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "loader": 1
+   },
+   "why": [
+    "Ядро й міксини вантажить Cleanroom"
+   ]
+  },
+  {
+   "source": "twoplayersonehorse-1.12.2-1.0.3.jar",
+   "target": "cleanroom-0.7.14-alpha-universal.jar",
+   "kinds": {
+    "loader": 1
+   },
+   "why": [
+    "Несе власний Mixin 0.7, Cleanroom приймає його"
+   ]
+  },
+  {
+   "source": "roomfortwo-forge-1.12.2-0.3.1.jar",
+   "target": "cosmeticbeds-1.12.2-1.0.2.2.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: ліжка"
+   ]
+  },
+  {
+   "source": "twoplayersonehorse-1.12.2-1.0.3.jar",
+   "target": "WolfArmorAndStorage-3.8.1+1.12.2.alpha.1-SNAPSHOT-signed.jar",
+   "kinds": {
+    "theme": 1
+   },
+   "why": [
+    "Спільна тема: тварини-компаньйони"
+   ]
+  },
+  {
+   "source": "CraftTweaker2-1.12-4.1.20.718.jar",
+   "target": "Future-MC-0.2.21.jar",
+   "kinds": {
+    "script": 1
+   },
+   "why": [
+    "compost.zs додає в компостер Future MC листя, саджанці й рослини Quark, Galacticraft і GalaxySpace"
+   ]
+  }
+ ],
+ "cats": {
+  "main": "Основні моди",
+  "world": "Світ і механіки",
+  "qol": "Зручність, графіка й звук",
+  "tech": "Технічні",
+  "lib": "Бібліотеки"
+ },
+ "catNotes": {
+  "main": "На них тримається збірка.",
+  "world": "Нові моби, споруди й правила виживання.",
+  "qol": "Інтерфейс, карта, підказки, атмосфера.",
+  "tech": "Оптимізація, виправлення й скрипти збірки. Гравцеві знати про них не обов'язково.",
+  "lib": "Потрібні іншим модам, самі нічого не додають."
+ }
+}
