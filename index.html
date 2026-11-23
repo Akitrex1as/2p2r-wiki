@@ -268,6 +268,28 @@ ul.rel .w { display: block; color: var(--muted); font-size: 12px; line-height: 1
 /* in-game textures: items are 16x16 and scaled without blur; blocks are pre-rendered isometric cubes */
 img.ico { width: 1.45em; height: 1.45em; vertical-align: -.36em; margin-right: .18em; image-rendering: pixelated; }
 img.ico.cube { image-rendering: auto; }
+/* route map (home) */
+.rt-wrap { overflow-x: auto; margin: 14px 0 6px; border: 1px solid var(--line); background: #05060a; scrollbar-width: thin; }
+.rt-map { display: block; width: 100%; min-width: 1080px; height: auto; font-family: var(--body); }
+.rt-map.rt-far { min-width: 820px; }
+.rt-map image { image-rendering: pixelated; }
+.rt-orbit { fill: none; stroke: rgba(150,170,210,.22); stroke-width: 1.2; stroke-dasharray: 5 6; }
+.rt-orbit.rt-belt { stroke: rgba(200,180,150,.32); stroke-dasharray: 2 4; stroke-width: 3; }
+.rt-sun { filter: drop-shadow(0 0 18px rgba(255,190,90,.55)); }
+.rt-star, .rt-sys { fill: #ffd27a; font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.rt-name { fill: #eef1f8; font-size: 13px; font-weight: 700; text-anchor: middle; }
+.rt-moon { fill: #b9c0d0; font-size: 11px; text-anchor: middle; }
+.rt-note { fill: #8f97aa; font-size: 10.5px; text-anchor: middle; }
+.rt-tie { stroke: rgba(150,170,210,.35); }
+.rt-chip rect { fill: var(--tc, #3a4050); }
+.rt-chip text { fill: #0b0d12; font-size: 10.5px; font-weight: 800; text-anchor: middle; }
+.rt-start rect { fill: #59b86a; }
+.t1 { --tc: #c8cbe0; } .t2 { --tc: #e0794a; } .t3 { --tc: #ffb45c; } .t4 { --tc: #d9a37a; } .t5 { --tc: #e8d39a; } .t6 { --tc: #8aa2ff; }
+.rt-stop:hover .rt-body, .rt-stop:focus .rt-body { filter: drop-shadow(0 0 8px rgba(255,255,255,.7)); }
+.rt-stop:hover .rt-name, .rt-stop:focus .rt-name { fill: #fff; text-decoration: underline; }
+.rt-panel { fill: none; stroke: rgba(150,170,210,.28); }
+.rt-legend { font-size: 13.5px; color: var(--muted); }
+.rt-key { display: inline-block; padding: 0 5px; font-weight: 800; font-size: 12px; color: #0b0d12; background: var(--tc); }
 .modnote { color: var(--muted); margin: -4px 0 8px; font-size: 14px; }
 table.kv th { text-align: left; white-space: nowrap; color: var(--muted); font-weight: 500; width: 1%; padding-right: 18px; }
 .net-wrap { overflow-x: auto; margin: 14px 0 18px; }
@@ -317,28 +339,6 @@ table.kv th { text-align: left; white-space: nowrap; color: var(--muted); font-w
 .net-map.ip .ah { fill: var(--ok); } .net-map.ip .ah2 { fill: var(--muted); }
 .net-map.ip .num { fill: var(--ink); font: 600 12px var(--body); }
 .net-map.ip .sep { stroke: var(--line); stroke-width: 1; }
-/* route map (home) */
-.rt-wrap { overflow-x: auto; margin: 14px 0 6px; border: 1px solid var(--line); background: #05060a; scrollbar-width: thin; }
-.rt-map { display: block; width: 100%; min-width: 1080px; height: auto; font-family: var(--body); }
-.rt-map.rt-far { min-width: 820px; }
-.rt-map image { image-rendering: pixelated; }
-.rt-orbit { fill: none; stroke: rgba(150,170,210,.22); stroke-width: 1.2; stroke-dasharray: 5 6; }
-.rt-orbit.rt-belt { stroke: rgba(200,180,150,.32); stroke-dasharray: 2 4; stroke-width: 3; }
-.rt-sun { filter: drop-shadow(0 0 18px rgba(255,190,90,.55)); }
-.rt-star, .rt-sys { fill: #ffd27a; font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
-.rt-name { fill: #eef1f8; font-size: 13px; font-weight: 700; text-anchor: middle; }
-.rt-moon { fill: #b9c0d0; font-size: 11px; text-anchor: middle; }
-.rt-note { fill: #8f97aa; font-size: 10.5px; text-anchor: middle; }
-.rt-tie { stroke: rgba(150,170,210,.35); }
-.rt-chip rect { fill: var(--tc, #3a4050); }
-.rt-chip text { fill: #0b0d12; font-size: 10.5px; font-weight: 800; text-anchor: middle; }
-.rt-start rect { fill: #59b86a; }
-.t1 { --tc: #c8cbe0; } .t2 { --tc: #e0794a; } .t3 { --tc: #ffb45c; } .t4 { --tc: #d9a37a; } .t5 { --tc: #e8d39a; } .t6 { --tc: #8aa2ff; }
-.rt-stop:hover .rt-body, .rt-stop:focus .rt-body { filter: drop-shadow(0 0 8px rgba(255,255,255,.7)); }
-.rt-stop:hover .rt-name, .rt-stop:focus .rt-name { fill: #fff; text-decoration: underline; }
-.rt-panel { fill: none; stroke: rgba(150,170,210,.28); }
-.rt-legend { font-size: 13.5px; color: var(--muted); }
-.rt-key { display: inline-block; padding: 0 5px; font-weight: 800; font-size: 12px; color: #0b0d12; background: var(--tc); }
  .facts-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 18px; }
 .facts-row span { border: 1px solid var(--line); padding: 5px 10px; font-size: 13.5px; color: var(--muted); }
 img.mob { width: 48px; height: 48px; flex: none; border-radius: 6px; background: radial-gradient(circle at 50% 45%, rgba(190,200,220,.28), rgba(190,200,220,.06) 70%); }
@@ -753,7 +753,7 @@ svg.spark line { stroke: var(--line); stroke-width: 1; }
 <rect class="rt-orbit" x="-80" y="-45" width="300" height="300"/>
 <rect class="rt-orbit" x="-140" y="-105" width="420" height="420"/>
 <a href="#proxima-star"><title>Проксима Центавра</title><image class="rt-sun" href="tex/body_proxima-star.png" x="33" y="68" width="74" height="74" preserveAspectRatio="none"/></a>
-<a href="#proxima" class="rt-stop"><title>Proxima B — 4,2 світлового року</title><image class="rt-body" href="tex/body_proxima.png" x="203" y="95" width="34" height="34" preserveAspectRatio="none"/><text class="rt-name" x="220" y="66">Proxima B</text><g class="rt-chip t6"><rect x="208" y="72" width="24" height="15"/><text x="220" y="83">T6</text></g><text class="rt-note" x="220" y="152">4,2 світлового року</text></a>
+<a href="#proxima" class="rt-stop"><title>Proxima B</title><image class="rt-body" href="tex/body_proxima.png" x="203" y="95" width="34" height="34" preserveAspectRatio="none"/><text class="rt-name" x="220" y="66">Proxima B</text><g class="rt-chip t6"><rect x="208" y="72" width="24" height="15"/><text x="220" y="83">T6</text></g></a>
 </g>
 <g transform="translate(400 0)">
 <rect class="rt-panel" x="0" y="0" width="380" height="190"/>
@@ -761,11 +761,11 @@ svg.spark line { stroke: var(--line); stroke-width: 1; }
 <rect class="rt-orbit" x="-80" y="-45" width="300" height="300"/>
 <rect class="rt-orbit" x="-140" y="-105" width="420" height="420"/>
 <a href="#tauceti-star"><title>Тау Кита</title><image class="rt-sun" href="tex/body_tauceti-star.png" x="33" y="68" width="74" height="74" preserveAspectRatio="none"/></a>
-<a href="#tauceti" class="rt-stop"><title>Тау Кита F — корали для ока Енду</title><image class="rt-body" href="tex/body_tauceti.png" x="203" y="95" width="34" height="34" preserveAspectRatio="none"/><text class="rt-name" x="220" y="66">Тау Кита F</text><g class="rt-chip t6"><rect x="208" y="72" width="24" height="15"/><text x="220" y="83">T6</text></g><text class="rt-note" x="220" y="152">корали для ока Енду</text></a>
+<a href="#tauceti" class="rt-stop"><title>Тау Кита F</title><image class="rt-body" href="tex/body_tauceti.png" x="203" y="95" width="34" height="34" preserveAspectRatio="none"/><text class="rt-name" x="220" y="66">Тау Кита F</text><g class="rt-chip t6"><rect x="208" y="72" width="24" height="15"/><text x="220" y="83">T6</text></g></a>
 </g>
 <g transform="translate(800 0)"><rect class="rt-panel" x="0" y="0" width="400" height="190"/>
 <text class="rt-sys" x="16" y="24">Фінал</text>
-<a href="#end" class="rt-stop"><title>Енд — фінал і елітри</title><image class="rt-body" href="tex/surf_end.png" x="160" y="58" width="80" height="80" preserveAspectRatio="none"/><text class="rt-name" x="200" y="48">Енд</text><text class="rt-note" x="200" y="158">око Енду з коралу Тау Кита → фінал і елітри</text></a>
+<a href="#end" class="rt-stop"><title>Енд</title><image class="rt-body" href="tex/surf_end.png" x="160" y="58" width="80" height="80" preserveAspectRatio="none"/><text class="rt-name" x="200" y="48">Енд</text></a>
 </g></svg>
 </div>
 
