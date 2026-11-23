@@ -17,58 +17,126 @@ img { max-width: 100%; }
 <style>
 /* Layout: a ship's logbook in orbit. Left rail is the mission index, the article is a log entry, the infobox is a mission card. One dark sky, the same as the mod map. */
 :root {
-  color-scheme: dark;
-  --void: #0a0b24; --void-2: #10123a; --nebula-a: #3a1f73; --nebula-b: #0f4a6e; --nebula-c: #6a1f5c;
-  --panel: rgba(17, 20, 56, .82); --panel-solid: #14174a; --stage: rgba(9, 11, 36, .42);
-  --ink: #eef0ff; --muted: #a9aed8; --faint: #7d83b8; --line: #3a3f7d; --chip: #252a66;
-  --focus: #9fd3ff; --glow: #8f8cff; --star: #ffffff; --sun: #ffc65c; --warn: #ff9f6e; --ok: #62e0b3;
-  --g-space: #7fb6ff; --g-pollution: #c6d25a; --g-progress: #ffb45c; --g-content: #ff86a4; --g-world: #62e0b3;
-  --g-ui: #c39bff; --g-visual: #5fe0f0; --g-platform: #e3c9a6; --g-lib: #aab4d6;
-  --k-required: #9cc2ff; --k-optional: #7f93c2; --k-code: #8a9ccc; --k-patch: #9d9dc0; --k-loader: #e3c9a6;
-  --k-recipe: #ff9f6e; --k-progress: #ffc65c; --k-script: #ff7fb0; --k-config: #d7a6ff; --k-role: #69e0b6; --k-theme: #7fe3ea;
-  --display: "Unbounded", "Golos Text", system-ui, sans-serif; --body: "Golos Text", system-ui, sans-serif; --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
-  --rail: 248px; --top: 58px;
+  --nebula-a: #3a1f73;
+  --nebula-b: #0f4a6e;
+  --nebula-c: #6a1f5c;
+  --g-space: #7fb6ff;
+  --g-pollution: #c6d25a;
+  --g-progress: #ffb45c;
+  --g-content: #ff86a4;
+  --g-world: #62e0b3;
+  --g-ui: #c39bff;
+  --g-visual: #5fe0f0;
+  --g-platform: #e3c9a6;
+  --g-lib: #aab4d6;
+  --k-required: #9cc2ff;
+  --k-optional: #7f93c2;
+  --k-code: #8a9ccc;
+  --k-patch: #9d9dc0;
+  --k-loader: #e3c9a6;
+  --k-recipe: #ff9f6e;
+  --k-progress: #ffc65c;
+  --k-script: #ff7fb0;
+  --k-config: #d7a6ff;
+  --k-role: #69e0b6;
+  --k-theme: #7fe3ea;
+  --rail: 248px;
+  --top: 58px;
+  color-scheme: light;
+  --void: #ffffff;
+  --void-2: #f8f9fa;
+  --panel: #f8f9fa;
+  --panel-solid: #ffffff;
+  --stage: #f8f9fa;
+  --ink: #202122;
+  --muted: #54595d;
+  --faint: #72777d;
+  --line: #a2a9b1;
+  --rule: #c8ccd1;
+  --chip: #eaecf0;
+  --focus: #3366cc;
+  --glow: #3366cc;
+  --sun: #d72d1f;
+  --accent: #d72d1f;
+  --warn: #b32424;
+  --ok: #14866d;
+  --star: #202122;
+  --infobox: #f8f9fa;
+  --infohead: #eaecf0;
+  --topbar: #000000;
+  --topink: #ffffff;
+  --display: "Public Sans", system-ui, sans-serif;
+  --body: "Public Sans", system-ui, sans-serif;
+  --serif: "Source Serif 4", "Linux Libertine", Georgia, "Times New Roman", serif;
+  --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
 }
-* { box-sizing: border-box; }
+* { box-sizing: border-box; border-radius: 0 !important; }
 html { scroll-padding-top: calc(var(--top) + env(safe-area-inset-top, 0px) + 12px); }
-body { margin: 0; color: var(--ink); font: 15px/1.6 var(--body); background-color: var(--void);
+body {
+  margin: 0;
+  color: var(--ink);
+  background-color: var(--void);
   background-image: radial-gradient(60% 55% at 18% 12%, color-mix(in srgb, var(--nebula-a) 70%, transparent), transparent 70%), radial-gradient(50% 50% at 85% 78%, color-mix(in srgb, var(--nebula-b) 75%, transparent), transparent 72%), radial-gradient(38% 36% at 62% 18%, color-mix(in srgb, var(--nebula-c) 45%, transparent), transparent 75%);
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  font: 15px/1.6 var(--body);
+}
 body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--void); }
-#stars { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; }
+#stars { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; display: none; }
 a { color: var(--focus); text-decoration-color: color-mix(in srgb, var(--focus) 45%, transparent); text-underline-offset: 2px; }
 a:hover { text-decoration-color: var(--focus); }
 button, input { font: inherit; color: inherit; }
-:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
-code, kbd { font: 13px var(--mono); background: var(--chip); border: 1px solid var(--line); border-radius: 5px; padding: 0 5px; white-space: nowrap; }
+:focus-visible { outline-offset: 2px; border-radius: 4px; outline: 2px solid var(--accent); }
+code, kbd { font: 13px var(--mono); border: 1px solid var(--line); border-radius: 5px; padding: 0 5px; white-space: nowrap; background: var(--chip); border-color: var(--line); }
 
 /* top bar */
-.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; height: var(--top); display: flex; align-items: center; gap: 14px;
-  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
-  background: color-mix(in srgb, var(--void) 86%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
-.brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; color: var(--ink); min-width: 0; }
-.brand b { font: 700 19px/1 var(--display); letter-spacing: .02em; text-shadow: 0 0 18px var(--glow); }
-.brand span { font: 12px var(--mono); color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.menu { display: none; border: 1px solid var(--line); background: var(--panel); border-radius: 999px; padding: 6px 13px; cursor: pointer; font: 500 13px var(--mono); }
+.top {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  background: var(--topbar);
+  color: var(--topink);
+  backdrop-filter: none;
+  border-bottom: 4px solid var(--accent);
+  height: 60px;
+}
+.brand { display: flex; gap: 10px; text-decoration: none; min-width: 0; color: var(--topink); align-items: center; }
+.brand b { font: 700 19px/1 var(--display); letter-spacing: .02em; text-shadow: none; background: var(--accent); }
+.brand span { font: 12px var(--mono); color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; letter-spacing: .08em; text-transform: uppercase; }
+.menu { display: none; border: 1px solid var(--line); border-radius: 999px; padding: 6px 13px; cursor: pointer; font: 500 13px var(--mono); background: #16171a; border-color: #3b3f46; color: #fff; }
 .search { margin-left: auto; position: relative; width: min(340px, 46vw); }
-.search input { width: 100%; background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; font-size: 14px; }
+.search input { width: 100%; border-radius: 999px; font-size: 14px; background: #16171a; border: 1px solid #3b3f46; padding: 8px 12px; }
 .search input::placeholder { color: var(--faint); }
-.results { position: absolute; right: 0; top: calc(100% + 6px); width: min(440px, 92vw); max-height: 60vh; overflow-y: auto; background: var(--panel-solid); border: 1px solid var(--line); border-radius: 12px; padding: 6px; box-shadow: 0 18px 40px rgba(0,0,0,.5); }
+.results { position: absolute; right: 0; top: calc(100% + 6px); width: min(440px, 92vw); max-height: 60vh; overflow-y: auto; border: 1px solid var(--line); border-radius: 12px; padding: 6px; background: var(--panel-solid); border-color: var(--line); box-shadow: 0 10px 30px rgba(0,0,0,.25); }
 .results a { display: block; padding: 8px 10px; border-radius: 8px; text-decoration: none; color: var(--ink); }
 .results a:hover, .results a:focus-visible { background: var(--chip); }
 .results a small { display: block; color: var(--muted); font-size: 12.5px; line-height: 1.4; }
 .results p { margin: 8px 10px; color: var(--muted); font-size: 13px; }
 
 /* shell */
-.shell { position: relative; z-index: 1; display: grid; grid-template-columns: var(--rail) minmax(0, 1fr); gap: 28px;
-  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 22px 60px; max-width: 1400px; margin: 0 auto; }
+.shell {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: var(--rail) minmax(0, 1fr);
+  gap: 28px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 22px 60px;
+  margin: 0 auto;
+  max-width: 1440px;
+}
 nav.rail { position: sticky; top: calc(var(--top) + env(safe-area-inset-top, 0px) + 18px); align-self: start; max-height: calc(100vh - var(--top) - 40px); overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--line) transparent; padding-right: 4px; }
-.rail h4 { margin: 18px 0 6px; font: 500 10.5px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--faint); }
+.rail h4 { margin: 18px 0 6px; text-transform: uppercase; color: var(--ink); font: 800 11px var(--display); letter-spacing: .1em; border-bottom: 1px solid var(--rule); padding-bottom: 4px; }
 .rail h4:first-child { margin-top: 0; }
 .rail a { display: flex; align-items: center; gap: 8px; padding: 5px 10px; border-radius: 8px; color: var(--muted); text-decoration: none; font-size: 14px; line-height: 1.35; }
 .rail a::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: var(--line); flex: none; }
 .rail a:hover { color: var(--ink); background: color-mix(in srgb, var(--chip) 60%, transparent); }
-.rail a[aria-current="page"] { color: var(--ink); background: var(--chip); }
+.rail a[aria-current="page"] { color: var(--ink); background: var(--chip); font-weight: 700; }
 .rail a[aria-current="page"]::before { background: var(--sun); box-shadow: 0 0 8px var(--sun); }
 .rail .sub a { padding-left: 24px; font-size: 13.5px; }
 .rail .sub a::before { width: 4px; height: 4px; }
@@ -77,17 +145,17 @@ nav.rail { position: sticky; top: calc(var(--top) + env(safe-area-inset-top, 0px
 main { min-width: 0; }
 article { display: none; }
 article.on { display: block; }
-.crumbs { font: 12px var(--mono); color: var(--faint); margin-bottom: 8px; letter-spacing: .04em; }
-h1 { font: 700 clamp(26px, 4vw, 38px)/1.12 var(--display); margin: 0 0 12px; text-wrap: balance; letter-spacing: .005em; }
+.crumbs { margin-bottom: 8px; font: 600 12px var(--display); color: var(--faint); letter-spacing: .02em; text-transform: none; }
+h1 { font: 700 clamp(26px, 4vw, 38px)/1.12 var(--display); margin: 0 0 12px; text-wrap: balance; letter-spacing: .005em; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
 h2 { font: 700 20px/1.25 var(--display); margin: 34px 0 10px; text-wrap: balance; padding-bottom: 7px; border-bottom: 1px solid var(--line); }
 h3 { font: 600 16px/1.35 var(--body); margin: 22px 0 6px; color: var(--ink); }
 p, li { max-width: 72ch; }
-.lead { font-size: 17px; color: #d9dcff; max-width: 68ch; }
+.lead { max-width: 68ch; font-size: 16.5px; color: var(--ink); }
 .wrap { display: grid; grid-template-columns: minmax(0, 1fr) 290px; gap: 30px; align-items: start; }
 .wrap > div { min-width: 0; }
 ul, ol { padding-left: 22px; }
 li { margin: 3px 0; }
-.note { border: 1px solid var(--line); border-left: 3px solid var(--sun); background: color-mix(in srgb, var(--panel) 80%, transparent); border-radius: 10px; padding: 10px 14px; margin: 14px 0; max-width: 72ch; }
+.note { border: 1px solid var(--line); border-left: 3px solid var(--sun); border-radius: 10px; padding: 10px 14px; margin: 14px 0; max-width: 72ch; background: var(--panel); }
 .note.warn { border-left-color: var(--warn); }
 .note b:first-child { color: var(--sun); }
 .note.warn b:first-child { color: var(--warn); }
@@ -104,48 +172,36 @@ li { margin: 3px 0; }
 .orb b { position: absolute; right: 10px; top: 8px; font: 700 12px var(--mono); color: var(--sun); }
 
 /* tables */
-.tbl { overflow-x: auto; margin: 12px 0; border: 1px solid var(--line); border-radius: 10px; background: color-mix(in srgb, var(--panel) 70%, transparent); }
+.tbl { overflow-x: auto; margin: 12px 0; border-radius: 10px; background: transparent; border: 1px solid var(--line); }
 table { border-collapse: collapse; width: 100%; font-size: 14px; }
 th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid color-mix(in srgb, var(--line) 70%, transparent); vertical-align: top; }
-th { font: 500 11.5px var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; background: color-mix(in srgb, var(--chip) 60%, transparent); }
+th { font: 500 11.5px var(--mono); color: var(--muted); background: var(--infohead); letter-spacing: 0; text-transform: none; }
 tr:last-child td { border-bottom: 0; }
 td.n, th.n { font-variant-numeric: tabular-nums; white-space: nowrap; }
-.tier { display: inline-block; font: 700 11.5px var(--mono); color: var(--void); background: var(--sun); border-radius: 5px; padding: 0 6px; }
-.tier.t0 { background: var(--faint); }
+.tier { display: inline-block; font: 700 11.5px var(--mono); background: var(--sun); border-radius: 5px; padding: 0 6px; color: #fff; font-weight: 800; }
 
 /* toc */
-.toc { margin: 18px 0 6px; padding: 10px 14px; border: 1px dashed var(--line); border-radius: 10px; max-width: 72ch; }
-.toc b { font: 500 11px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--faint); }
+.toc { margin: 18px 0 6px; padding: 10px 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel); display: inline-block; min-width: 260px; max-width: 100%; }
+.toc b { font: 500 11px var(--mono); letter-spacing: .1em; color: var(--faint); text-transform: none; }
 .toc ol { margin: 6px 0 0; padding-left: 20px; columns: 2; column-gap: 26px; }
 .toc button { all: unset; cursor: pointer; color: var(--focus); font-size: 14px; }
 .toc button:hover { text-decoration: underline; }
 
 /* home */
-.hero { padding: 6px 0 4px; }
-.hero .kicker { font: 500 12px var(--mono); color: var(--sun); letter-spacing: .14em; text-transform: uppercase; }
-.hero h1 { font-size: clamp(32px, 6vw, 58px); margin: 8px 0 14px; }
-.hero h1 em { font-style: normal; color: var(--g-space); text-shadow: 0 0 26px color-mix(in srgb, var(--g-space) 60%, transparent); }
-.route { list-style: none; margin: 22px 0 8px; padding: 0 0 6px; display: grid; grid-auto-flow: column; grid-auto-columns: minmax(124px, 1fr); gap: 0; overflow-x: auto; scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
-.route li { position: relative; padding: 34px 10px 0 0; margin: 0; max-width: none; }
-.route li::before { content: ""; position: absolute; left: 0; right: 0; top: 13px; border-top: 2px dashed color-mix(in srgb, var(--glow) 55%, transparent); }
-.route li:last-child::before { right: 50%; }
-.route li::after { content: ""; position: absolute; left: 0; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: var(--c, var(--g-space)); box-shadow: 0 0 14px var(--c, var(--g-space)); }
-.route a { display: block; text-decoration: none; color: var(--ink); }
-.route b { display: block; font: 600 14px/1.25 var(--body); }
-.route small { display: block; color: var(--muted); font-size: 12.5px; line-height: 1.35; margin-top: 3px; }
+.hero { padding: 6px 0 4px; border-bottom: 1px solid var(--line); padding-bottom: 18px; }
+.hero .kicker { text-transform: uppercase; color: var(--accent); font: 800 12px var(--display); letter-spacing: .16em; }
+.hero h1 { font-size: clamp(32px, 6vw, 58px); margin: 8px 0 14px; letter-spacing: -.03em; }
+.hero h1 em { color: var(--accent); text-shadow: none; font-style: normal; }
 .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin: 14px 0; }
 .card { display: block; text-decoration: none; color: var(--ink); background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 13px 14px; }
 .card:hover { border-color: var(--focus); }
 .card b { font: 600 15px var(--body); display: block; margin-bottom: 3px; }
 .card span { color: var(--muted); font-size: 13.5px; line-height: 1.45; display: block; }
-.facts { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; padding: 0; list-style: none; }
-.facts li { margin: 0; font: 12.5px var(--mono); color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 3px 11px; background: color-mix(in srgb, var(--panel) 70%, transparent); }
-.facts li b { color: var(--ink); font-weight: 500; }
 .copy { display: inline-flex; align-items: center; gap: 8px; }
 .copy button { border: 1px solid var(--line); background: var(--chip); border-radius: 999px; padding: 2px 10px; font: 12px var(--mono); cursor: pointer; }
 
 /* planets catalog */
-.worlds { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; margin: 14px 0; }
+.worlds { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; margin: 14px 0; display: block; }
 .world { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 10px; align-items: center; text-decoration: none; color: var(--ink); background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; }
 .world:hover { border-color: var(--focus); }
 .world i { width: 40px; height: 40px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, color-mix(in srgb, var(--c) 30%, white), var(--c) 45%, color-mix(in srgb, var(--c) 30%, black)); box-shadow: 0 0 16px color-mix(in srgb, var(--c) 40%, transparent); }
@@ -166,24 +222,24 @@ article[data-page="map"].on { display: grid; grid-template-rows: auto minmax(0, 
 .maphead { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; min-width: 0; }
 .maphead h1 { font-size: 22px; margin: 0; text-shadow: 0 0 18px var(--glow); }
 .maphead .sub { color: var(--muted); font: 12px var(--mono); }
-.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; background: var(--panel); }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; border-color: var(--line); background: var(--panel); }
 .seg button { border: 0; background: transparent; color: var(--muted); padding: 6px 14px; font: 500 13px var(--mono); cursor: pointer; }
 .seg button[aria-pressed="true"] { background: var(--glow); color: var(--void); }
 .maphead .spacer { flex: 1; }
 #q { background: var(--panel); border: 1px solid var(--line); color: var(--ink); border-radius: 999px; padding: 6px 14px; font: 13px var(--body); width: 220px; max-width: 100%; }
 .mapmain { display: grid; grid-template-columns: minmax(0, 1fr) 330px; gap: 12px; min-height: 0; }
-.stage { position: relative; min-width: 0; min-height: 0; background: var(--stage); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; box-shadow: inset 0 0 70px color-mix(in srgb, var(--glow) 16%, transparent); }
+.stage { position: relative; min-width: 0; min-height: 0; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--stage); border-color: var(--line); box-shadow: none; }
 #view2d, #view3d { position: absolute; inset: 0; }
 #labels3d { position: absolute; inset: 0; pointer-events: none; }
 .layers { position: absolute; left: 10px; top: 10px; right: 10px; display: flex; flex-wrap: wrap; gap: 5px 14px; pointer-events: none; z-index: 2; }
 .layers > div { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; pointer-events: auto; }
 .layers .t { font: 500 10.5px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-right: 2px; }
-.chip { display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 999px; padding: 3px 9px; font: 12px var(--body); cursor: pointer; }
+.chip { display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--line); color: var(--ink); border-radius: 999px; padding: 3px 9px; font: 12px var(--body); cursor: pointer; background: var(--panel); border-color: var(--line); }
 .chip i { width: 14px; height: 3px; border-radius: 2px; background: var(--c); display: block; box-shadow: 0 0 6px var(--c); }
 .chip[aria-pressed="false"] { opacity: .45; text-decoration: line-through; }
 .hint { position: absolute; left: 10px; bottom: 9px; z-index: 2; color: var(--muted); font-size: 12px; pointer-events: none; background: var(--panel); padding: 2px 9px; border-radius: 999px; }
 .mapnote { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 30px; color: var(--muted); z-index: 3; background: var(--void); }
-#panel { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 14px 15px; overflow-y: auto; min-width: 0; backdrop-filter: blur(8px); scrollbar-color: var(--line) transparent; font-size: 14px; line-height: 1.45; }
+#panel { border: 1px solid var(--line); border-radius: 14px; padding: 14px 15px; overflow-y: auto; min-width: 0; scrollbar-color: var(--line) transparent; font-size: 14px; line-height: 1.45; background: var(--panel); border-color: var(--line); backdrop-filter: none; }
 #panel h2 { font: 700 15.5px/1.25 var(--display); margin: 0 0 5px; border: 0; padding: 0; }
 #panel h3 { font: 500 11px var(--mono); text-transform: uppercase; letter-spacing: .08em; color: var(--focus); margin: 16px 0 6px; }
 #panel p { margin: 0 0 6px; }
@@ -261,28 +317,9 @@ table.kv th { text-align: left; white-space: nowrap; color: var(--muted); font-w
 .net-map.ip .ah { fill: var(--ok); } .net-map.ip .ah2 { fill: var(--muted); }
 .net-map.ip .num { fill: var(--ink); font: 600 12px var(--body); }
 .net-map.ip .sep { stroke: var(--line); stroke-width: 1; }
-.net-map.ip .pp { fill: var(--chip); stroke: var(--muted); stroke-width: 1.5; }
-.net-map.ip .pp.off { opacity: .45; stroke-dasharray: 3 3; }
-.net-map.ip .stone { fill: var(--faint); stroke: var(--ink); stroke-width: 1; }
-.net-map.ip .lever { fill: #8a5a2b; stroke: var(--ink); stroke-width: 1; }
-.net-map.ip .flow { stroke: var(--ok); stroke-width: 3; fill: none; }
-.net-map.ip .flow2 { stroke: var(--muted); stroke-width: 2.5; fill: none; }
-.net-map.ip .back { stroke: var(--warn); stroke-width: 2; fill: none; stroke-dasharray: 4 3; }
-.net-map.ip .ah { fill: var(--ok); } .net-map.ip .ah2 { fill: var(--muted); }
-.net-map.ip .num { fill: var(--ink); font: 600 12px var(--body); }
-.net-map.ip .sep { stroke: var(--line); stroke-width: 1; }
-.facts-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 18px; }
-.facts-row span { border: 1px solid var(--line); padding: 5px 10px; font-size: 13.5px; color: var(--muted); }
-img.mob { width: 48px; height: 48px; flex: none; border-radius: 6px; background: radial-gradient(circle at 50% 45%, rgba(190,200,220,.28), rgba(190,200,220,.06) 70%); }
-img.mob.px { image-rendering: pixelated; width: 40px; height: 40px; margin-left: 4px; }
-td.mobn { white-space: nowrap; }
-td.mobn > * { vertical-align: middle; }
-td.mobn img.mob { margin-right: 10px; }
-td.mobn b:only-child { padding-left: 58px; }
-@media (max-width: 640px) { td.mobn { white-space: normal; min-width: 7em; } td.mobn img.mob { display: block; margin: 0 0 6px; } td.mobn b:only-child { padding-left: 0; } }
 /* route map (home) */
 .rt-wrap { overflow-x: auto; margin: 14px 0 6px; border: 1px solid var(--line); background: #05060a; scrollbar-width: thin; }
-.rt-map { display: block; width: 100%; min-width: 980px; height: auto; font-family: var(--body); }
+.rt-map { display: block; width: 100%; min-width: 1080px; height: auto; font-family: var(--body); }
 .rt-map.rt-far { min-width: 820px; }
 .rt-map image { image-rendering: pixelated; }
 .rt-orbit { fill: none; stroke: rgba(150,170,210,.22); stroke-width: 1.2; stroke-dasharray: 5 6; }
@@ -302,6 +339,15 @@ td.mobn b:only-child { padding-left: 58px; }
 .rt-panel { fill: none; stroke: rgba(150,170,210,.28); }
 .rt-legend { font-size: 13.5px; color: var(--muted); }
 .rt-key { display: inline-block; padding: 0 5px; font-weight: 800; font-size: 12px; color: #0b0d12; background: var(--tc); }
+ .facts-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 18px; }
+.facts-row span { border: 1px solid var(--line); padding: 5px 10px; font-size: 13.5px; color: var(--muted); }
+img.mob { width: 48px; height: 48px; flex: none; border-radius: 6px; background: radial-gradient(circle at 50% 45%, rgba(190,200,220,.28), rgba(190,200,220,.06) 70%); }
+img.mob.px { image-rendering: pixelated; width: 40px; height: 40px; margin-left: 4px; }
+td.mobn { white-space: nowrap; }
+td.mobn > * { vertical-align: middle; }
+td.mobn img.mob { margin-right: 10px; }
+td.mobn b:only-child { padding-left: 58px; }
+@media (max-width: 640px) { td.mobn { white-space: normal; min-width: 7em; } td.mobn img.mob { display: block; margin: 0 0 6px; } td.mobn b:only-child { padding-left: 0; } }
 .icons { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; padding: 0; list-style: none; }
 .icons li { margin: 0; display: flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--muted); background: color-mix(in srgb, var(--panel) 80%, transparent); border: 1px solid var(--line); border-radius: 8px; padding: 4px 9px 4px 5px; max-width: none; }
 .icons img { width: 28px; height: 28px; image-rendering: pixelated; }
@@ -309,7 +355,7 @@ td.mobn b:only-child { padding-left: 58px; }
 /* recipe pictures: the real GUI textures, 3x pixels shown at 2x */
 .recipes { display: flex; flex-wrap: wrap; gap: 14px; margin: 14px 0; }
 figure.gui { margin: 0; display: flex; flex-direction: column; gap: 5px; max-width: 100%; }
-figure.gui img { display: block; width: 352px; max-width: 100%; height: auto; image-rendering: pixelated; filter: drop-shadow(0 8px 18px rgba(0,0,0,.5)); }
+figure.gui img { display: block; width: 352px; max-width: 100%; height: auto; image-rendering: pixelated; filter: none; }
 figure.gui figcaption { font: 600 13px var(--body); color: var(--muted); }
 /* planets: the body's own image from the in-game galaxy map (--p), drawn as a square like the map does;
    without an image, the surface block tiled (--s) */
@@ -325,11 +371,10 @@ figure.gui figcaption { font: 600 13px var(--body); color: var(--muted); }
 img.surf { width: 28px; height: 28px; image-rendering: pixelated; vertical-align: middle; border-radius: 3px; }
 .ores { display: flex; flex-wrap: wrap; gap: 4px; }
 .ores img { width: 30px; height: 30px; }
-.route li::after { border-radius: 0; box-shadow: 0 0 0 2px rgba(0,0,0,.55), 0 0 12px var(--c, var(--g-space)); background-image: var(--p, none), var(--s, none); background-size: 100% 100%, 6px 6px; background-repeat: no-repeat, repeat; image-rendering: pixelated; }
 
 /* building blocks catalog */
 .bgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 12px; margin: 12px 0 6px; }
-.bcard { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.bcard { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; display: flex; flex-direction: column; gap: 10px; min-width: 0; padding: 12px; }
 .bmain { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 12px; align-items: start; }
 .bmain img { width: 56px; height: 56px; }
 .bmain b { font: 600 15px var(--body); }
@@ -347,7 +392,7 @@ figure.shot { margin: 0; width: 200px; max-width: 100%; display: flex; flex-dire
 figure.shot img { display: block; width: 100%; height: auto; border: 2px solid #000; box-shadow: 0 0 0 1px var(--line), 0 10px 22px rgba(0,0,0,.45); image-rendering: auto; }
 figure.shot figcaption { font-size: 12.5px; line-height: 1.4; color: var(--muted); }
 
-footer.foot { margin-top: 48px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--faint); font-size: 12.5px; max-width: 72ch; }
+footer.foot { margin-top: 48px; padding-top: 14px; color: var(--faint); font-size: 12.5px; max-width: 72ch; border-top: 1px solid var(--line); }
 
 @media (max-width: 1100px) {
   .wrap { grid-template-columns: minmax(0, 1fr); }
@@ -368,17 +413,7 @@ footer.foot { margin-top: 48px; padding-top: 14px; border-top: 1px solid var(--l
   .maphead .spacer { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
-/* REDESIGN:start */
 /* Wikipedia by day, NASA by night: square edges, ruled tables, serif headings; black top bar with a red accent. */
-:root {
-  color-scheme: light;
-  --void: #ffffff; --void-2: #f8f9fa; --panel: #f8f9fa; --panel-solid: #ffffff; --stage: #f8f9fa;
-  --ink: #202122; --muted: #54595d; --faint: #72777d; --line: #a2a9b1; --rule: #c8ccd1; --chip: #eaecf0;
-  --focus: #3366cc; --glow: #3366cc; --sun: #d72d1f; --accent: #d72d1f; --warn: #b32424; --ok: #14866d; --star: #202122;
-  --infobox: #f8f9fa; --infohead: #eaecf0; --topbar: #000000; --topink: #ffffff;
-  --display: "Public Sans", system-ui, sans-serif; --body: "Public Sans", system-ui, sans-serif;
-  --serif: "Source Serif 4", "Linux Libertine", Georgia, "Times New Roman", serif; --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
-}
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   color-scheme: dark;
   --void: #000000; --void-2: #0b0c0e; --panel: #101113; --panel-solid: #141518; --stage: #0b0c0e;
@@ -392,66 +427,45 @@ footer.foot { margin-top: 48px; padding-top: 14px; border-top: 1px solid var(--l
   --focus: #7fb0ff; --glow: #fc3d21; --sun: #fc3d21; --accent: #fc3d21; --warn: #ff7a6b; --ok: #4fd1a5; --star: #ffffff;
   --infobox: #0d0e10; --infohead: #1b1d21; --topbar: #000000; --topink: #ffffff; }
 
-* { border-radius: 0 !important; }
-body { background: var(--void); background-image: none; font: 15px/1.6 var(--body); }
-#stars { display: none; }
+body { background: var(--void); background-image: none; }
 body::before { background: var(--topbar); }
 a { color: var(--focus); text-decoration: none; }
 a:hover { text-decoration: underline; }
-:focus-visible { outline: 2px solid var(--accent); }
 
 /* NASA top bar */
-.top { background: var(--topbar); color: var(--topink); backdrop-filter: none; border-bottom: 4px solid var(--accent); height: 60px; }
-.brand { color: var(--topink); align-items: center; }
-.brand b { font: 900 22px/1 var(--display); letter-spacing: -.02em; text-shadow: none; padding: 4px 8px; background: var(--accent); color: #fff; }
-.brand span { color: #c9ccd2; font: 600 12px var(--display); letter-spacing: .08em; text-transform: uppercase; }
-.search input { background: #16171a; border: 1px solid #3b3f46; color: #fff; padding: 8px 12px; }
+.brand b { font: 900 22px/1 var(--display); letter-spacing: -.02em; padding: 4px 8px; color: #fff; }
+.brand span { color: #c9ccd2; font: 600 12px var(--display); }
+.search input { color: #fff; }
 .search input::placeholder { color: #8b9099; }
-.menu { background: #16171a; border-color: #3b3f46; color: #fff; }
-.results { background: var(--panel-solid); border-color: var(--line); box-shadow: 0 10px 30px rgba(0,0,0,.25); }
 
 /* Wikipedia article type */
-.shell { max-width: 1440px; }
 nav.rail { border-right: 1px solid var(--rule); padding-right: 14px; }
-.rail h4 { color: var(--ink); font: 800 11px var(--display); letter-spacing: .1em; border-bottom: 1px solid var(--rule); padding-bottom: 4px; }
 .rail a { color: var(--focus); padding: 3px 6px; font-size: 13.5px; }
 .rail a::before { display: none; }
 .rail a:hover { background: var(--chip); text-decoration: none; }
-.rail a[aria-current="page"] { color: var(--ink); background: var(--chip); font-weight: 700; box-shadow: inset 3px 0 0 var(--accent); }
+.rail a[aria-current="page"] { color: var(--ink); background: var(--chip); box-shadow: inset 3px 0 0 var(--accent); }
 .rail .sub a.d0 { padding-left: 14px; font-weight: 600; }
 .rail .sub a.d1 { padding-left: 26px; }
 .rail .sub a.d2 { padding-left: 40px; font-size: 12.5px; }
-.crumbs { font: 600 12px var(--display); color: var(--faint); letter-spacing: .02em; text-transform: none; }
 .crumbs a { color: var(--focus); }
-h1 { font: 400 clamp(28px, 3.6vw, 40px)/1.2 var(--serif); border-bottom: 1px solid var(--line); padding-bottom: 6px; margin-bottom: 14px; }
+h1 { font: 400 clamp(28px, 3.6vw, 40px)/1.2 var(--serif); margin-bottom: 14px; }
 h2 { font: 400 25px/1.3 var(--serif); border-bottom: 1px solid var(--line); margin-top: 28px; }
 h3 { font: 700 16px var(--body); }
-.lead { font-size: 16.5px; color: var(--ink); }
-.note { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--accent); }
+.note { border: 1px solid var(--line); border-left: 4px solid var(--accent); }
 .note b:first-child { color: var(--ink); }
 .note.warn { border-left-color: var(--warn); }
-.tbl { background: transparent; border: 1px solid var(--line); }
-th { background: var(--infohead); color: var(--ink); font: 700 12px var(--body); letter-spacing: 0; text-transform: none; }
+th { color: var(--ink); font: 700 12px var(--body); }
 th, td { border: 1px solid var(--rule); }
-.tier { background: var(--accent); color: #fff; font-weight: 800; }
-code, kbd { background: var(--chip); border-color: var(--line); }
-.toc { border: 1px solid var(--line); background: var(--panel); display: inline-block; min-width: 260px; }
-.toc b { color: var(--ink); font: 700 13px var(--body); letter-spacing: 0; text-transform: none; }
+.tier { background: var(--accent); }
+.toc b { color: var(--ink); font: 700 13px var(--body); letter-spacing: 0; }
 .toc ol { columns: 1; }
 .toc button { color: var(--focus); }
-footer.foot { border-top: 1px solid var(--line); }
 
 /* home: NASA-style hero and cards */
-.hero { border-bottom: 1px solid var(--line); padding-bottom: 18px; }
-.hero .kicker { color: var(--accent); font: 800 12px var(--display); letter-spacing: .16em; }
-.hero h1 { font: 900 clamp(34px, 6vw, 64px)/1.02 var(--display); letter-spacing: -.03em; border: 0; }
-.hero h1 em { color: var(--accent); text-shadow: none; font-style: normal; }
-.facts li { border: 1px solid var(--line); background: var(--panel); color: var(--muted); }
+.hero h1 { font: 900 clamp(34px, 6vw, 64px)/1.02 var(--display); border: 0; }
 .card, .bcard, .kid, .world { background: var(--panel); border: 1px solid var(--line); }
 .card:hover, .kid:hover { border-color: var(--accent); text-decoration: none; }
 .card b { font: 800 15px var(--display); }
-.route li::before { border-top: 2px solid var(--line); }
-.route li::after { box-shadow: 0 0 0 2px var(--void), 0 0 0 3px var(--line); }
 
 /* infobox: a Wikipedia table */
 aside.infobox { position: sticky; padding: 0; background: var(--infobox); border: 1px solid var(--line); font-size: 13px; backdrop-filter: none; }
@@ -486,27 +500,19 @@ ul.tree { margin: 12px 0; }
 ul.tree ul { margin-left: 22px; padding-left: 14px; border-left: 1px solid var(--line); }
 ul.tree li { margin: 6px 0; max-width: none; }
 ul.tree .kid { display: inline-flex; min-width: min(100%, 300px); }
-.worlds { display: block; }
 
 /* map tab keeps a dark stage in both themes */
-.stage { background: var(--stage); border-color: var(--line); box-shadow: none; }
-#panel { background: var(--panel); border-color: var(--line); backdrop-filter: none; }
-.seg { border-color: var(--line); background: var(--panel); }
 .seg button[aria-pressed="true"] { background: var(--accent); color: #fff; }
-.chip { background: var(--panel); border-color: var(--line); }
 
 /* catalog cards and pictures */
-.bcard { padding: 12px; }
 figure.shot img, .bcard details img { border: 1px solid var(--line); box-shadow: none; }
-figure.gui img { filter: none; }
 @media (max-width: 1100px) { aside.infobox { position: static; width: 100%; max-width: min(420px, 100%); } }
-.toc { max-width: 100%; min-width: 0; }
+.toc { min-width: 0; }
 .restable td { vertical-align: middle; }
 .restable .resico { width: 28px; height: 28px; vertical-align: middle; margin-right: 8px; image-rendering: auto; }
 svg.spark { display: block; }
 svg.spark rect { fill: var(--accent); }
 svg.spark line { stroke: var(--line); stroke-width: 1; }
-/* REDESIGN:end */
 </style>
 </head>
 <body>
@@ -600,21 +606,21 @@ svg.spark line { stroke: var(--line); stroke-width: 1; }
   <h2>Маршрут збірки</h2>
   <p>Від Землі до краю Сонячної системи, а звідти до інших зір. Натисни на планету, щоб відкрити її сторінку.</p>
 <div class="rt-wrap">
-<svg class="rt-map" viewBox="0 0 1200 370" role="img" aria-label="Сонячна система: маршрут від Землі до краю системи">
+<svg class="rt-map" viewBox="0 0 1129 370" role="img" aria-label="Сонячна система: маршрут від Землі до краю системи">
 <title>Сонячна система в 2P2R: планети по порядку від Сонця, під кожною — її супутники, число — рівень ракети</title>
 <rect class="rt-orbit" x="-172" y="-2" width="284" height="284"/>
-<rect class="rt-orbit" x="-256" y="-86" width="452" height="452"/>
-<rect class="rt-orbit" x="-340" y="-170" width="620" height="620"/>
-<rect class="rt-orbit" x="-424" y="-254" width="788" height="788"/>
-<rect class="rt-orbit rt-belt" x="-508" y="-338" width="956" height="956"/>
-<rect class="rt-orbit" x="-592" y="-422" width="1124" height="1124"/>
-<rect class="rt-orbit" x="-676" y="-506" width="1292" height="1292"/>
-<rect class="rt-orbit" x="-760" y="-590" width="1460" height="1460"/>
-<rect class="rt-orbit" x="-844" y="-674" width="1628" height="1628"/>
-<rect class="rt-orbit" x="-928" y="-758" width="1796" height="1796"/>
-<rect class="rt-orbit" x="-1012" y="-842" width="1964" height="1964"/>
-<rect class="rt-orbit rt-belt" x="-1096" y="-926" width="2132" height="2132"/>
-<rect class="rt-orbit" x="-1180" y="-1010" width="2300" height="2300"/>
+<rect class="rt-orbit" x="-250" y="-80" width="440" height="440"/>
+<rect class="rt-orbit" x="-318" y="-148" width="576" height="576"/>
+<rect class="rt-orbit" x="-384" y="-214" width="708" height="708"/>
+<rect class="rt-orbit rt-belt" x="-464" y="-294" width="868" height="868"/>
+<rect class="rt-orbit" x="-546" y="-376" width="1032" height="1032"/>
+<rect class="rt-orbit" x="-624" y="-454" width="1188" height="1188"/>
+<rect class="rt-orbit" x="-730" y="-560" width="1400" height="1400"/>
+<rect class="rt-orbit" x="-837" y="-667" width="1614" height="1614"/>
+<rect class="rt-orbit" x="-915" y="-745" width="1770" height="1770"/>
+<rect class="rt-orbit" x="-985" y="-815" width="1910" height="1910"/>
+<rect class="rt-orbit rt-belt" x="-1055" y="-885" width="2050" height="2050"/>
+<rect class="rt-orbit" x="-1125" y="-955" width="2190" height="2190"/>
 <image class="rt-sun" href="tex/body_sun.png" x="-105" y="65" width="150" height="150" preserveAspectRatio="none"/>
 <text class="rt-star" x="14" y="240">Сонце</text>
 <a href="#mercury" class="rt-stop"><title>Меркурій</title>
@@ -622,122 +628,117 @@ svg.spark line { stroke: var(--line); stroke-width: 1; }
 <text class="rt-name" x="112" y="86">Меркурій</text>
 <g class="rt-chip t3"><rect x="100" y="92" width="24" height="15"/><text x="112" y="103">T3</text></g>
 </a>
-<a href="#venus" class="rt-stop"><title>Венера — схема T4</title>
-<image class="rt-body" href="tex/body_venus.png" x="181" y="125" width="30" height="30" preserveAspectRatio="none"/>
-<text class="rt-name" x="196" y="86">Венера</text>
-<g class="rt-chip t3"><rect x="184" y="92" width="24" height="15"/><text x="196" y="103">T3</text></g>
-<text class="rt-note" x="196" y="172">схема T4</text>
+<a href="#venus" class="rt-stop"><title>Венера</title>
+<image class="rt-body" href="tex/body_venus.png" x="175" y="125" width="30" height="30" preserveAspectRatio="none"/>
+<text class="rt-name" x="190" y="86">Венера</text>
+<g class="rt-chip t3"><rect x="178" y="92" width="24" height="15"/><text x="190" y="103">T3</text></g>
 </a>
-<a href="#earth" class="rt-stop"><title>Земля — старт</title>
-<image class="rt-body" href="tex/body_earth.png" x="264" y="124" width="32" height="32" preserveAspectRatio="none"/>
-<text class="rt-name" x="280" y="86">Земля</text>
-<g class="rt-chip rt-start"><rect x="260" y="92" width="40" height="15"/><text x="280" y="103">старт</text></g>
-<text class="rt-note" x="280" y="172">старт</text>
+<a href="#earth" class="rt-stop"><title>Земля</title>
+<image class="rt-body" href="tex/body_earth.png" x="242" y="124" width="32" height="32" preserveAspectRatio="none"/>
+<text class="rt-name" x="258" y="86">Земля</text>
+<g class="rt-chip rt-start"><rect x="238" y="92" width="40" height="15"/><text x="258" y="103">старт</text></g>
 </a>
 <a href="#moon" class="rt-stop"><title>Місяць</title>
-<line class="rt-tie" x1="280" y1="178" x2="280" y2="183"/>
-<image class="rt-body" href="tex/body_moon.png" x="272" y="184" width="16" height="16" preserveAspectRatio="none"/>
-<text class="rt-moon" x="280" y="214">Місяць</text>
-<text class="rt-note" x="280" y="227">схема T2</text>
+<line class="rt-tie" x1="258" y1="166" x2="258" y2="171"/>
+<image class="rt-body" href="tex/body_moon.png" x="250" y="172" width="16" height="16" preserveAspectRatio="none"/>
+<text class="rt-moon" x="258" y="202">Місяць</text>
 </a>
-<a href="#mars" class="rt-stop"><title>Марс — деш, схема T3</title>
-<image class="rt-body" href="tex/body_mars.png" x="351" y="127" width="26" height="26" preserveAspectRatio="none"/>
-<text class="rt-name" x="364" y="86">Марс</text>
-<g class="rt-chip t2"><rect x="352" y="92" width="24" height="15"/><text x="364" y="103">T2</text></g>
-<text class="rt-note" x="364" y="172">деш, схема T3</text>
+<a href="#mars" class="rt-stop"><title>Марс</title>
+<image class="rt-body" href="tex/body_mars.png" x="311" y="127" width="26" height="26" preserveAspectRatio="none"/>
+<text class="rt-name" x="324" y="86">Марс</text>
+<g class="rt-chip t2"><rect x="312" y="92" width="24" height="15"/><text x="324" y="103">T2</text></g>
 </a>
 <a href="#phobos" class="rt-stop"><title>Фобос</title>
-<line class="rt-tie" x1="364" y1="178" x2="364" y2="183"/>
-<image class="rt-body" href="tex/body_phobos.png" x="356" y="184" width="16" height="16" preserveAspectRatio="none"/>
-<text class="rt-moon" x="364" y="214">Фобос</text>
+<line class="rt-tie" x1="324" y1="166" x2="324" y2="171"/>
+<image class="rt-body" href="tex/body_phobos.png" x="316" y="172" width="16" height="16" preserveAspectRatio="none"/>
+<text class="rt-moon" x="324" y="202">Фобос</text>
 </a>
 <a href="#asteroids" class="rt-stop"><title>Астероїди</title>
-<image class="rt-body" href="tex/body_asteroids.png" x="431" y="123" width="34" height="34" preserveAspectRatio="none"/>
-<text class="rt-name" x="448" y="86">Астероїди</text>
-<g class="rt-chip t3"><rect x="436" y="92" width="24" height="15"/><text x="448" y="103">T3</text></g>
+<image class="rt-body" href="tex/body_asteroids.png" x="387" y="123" width="34" height="34" preserveAspectRatio="none"/>
+<text class="rt-name" x="404" y="86">Астероїди</text>
+<g class="rt-chip t3"><rect x="392" y="92" width="24" height="15"/><text x="404" y="103">T3</text></g>
 </a>
-<a href="#ceres" class="rt-stop"><title>Церера — ключ 4</title>
-<image class="rt-body" href="tex/body_ceres.png" x="523" y="131" width="18" height="18" preserveAspectRatio="none"/>
-<text class="rt-name" x="532" y="86">Церера</text>
-<g class="rt-chip t3"><rect x="520" y="92" width="24" height="15"/><text x="532" y="103">T3</text></g>
-<text class="rt-note" x="532" y="172">ключ 4</text>
+<a href="#ceres" class="rt-stop"><title>Церера</title>
+<image class="rt-body" href="tex/body_ceres.png" x="477" y="131" width="18" height="18" preserveAspectRatio="none"/>
+<text class="rt-name" x="486" y="86">Церера</text>
+<g class="rt-chip t3"><rect x="474" y="92" width="24" height="15"/><text x="486" y="103">T3</text></g>
 </a>
 <a href="#jupiter" class="rt-stop"><title>Юпітер</title>
-<image class="rt-body" href="tex/body_jupiter.png" x="584" y="108" width="64" height="64" preserveAspectRatio="none"/>
-<text class="rt-name" x="616" y="86">Юпітер</text>
-<g class="rt-chip t4"><rect x="604" y="92" width="24" height="15"/><text x="616" y="103">T4</text></g>
+<image class="rt-body" href="tex/body_jupiter.png" x="532" y="108" width="64" height="64" preserveAspectRatio="none"/>
+<text class="rt-name" x="564" y="86">Юпітер</text>
+<g class="rt-chip t4"><rect x="552" y="92" width="24" height="15"/><text x="564" y="103">T4</text></g>
 </a>
 <a href="#io" class="rt-stop"><title>Іо</title>
-<line class="rt-tie" x1="616" y1="182" x2="616" y2="187"/>
-<image class="rt-body" href="tex/body_io.png" x="608" y="188" width="16" height="16" preserveAspectRatio="none"/>
-<text class="rt-moon" x="616" y="218">Іо</text>
+<line class="rt-tie" x1="564" y1="182" x2="564" y2="187"/>
+<image class="rt-body" href="tex/body_io.png" x="556" y="188" width="16" height="16" preserveAspectRatio="none"/>
+<text class="rt-moon" x="564" y="218">Іо</text>
 </a>
 <a href="#europa" class="rt-stop"><title>Європа</title>
-<line class="rt-tie" x1="616" y1="222" x2="616" y2="227"/>
-<image class="rt-body" href="tex/body_europa.png" x="608" y="228" width="16" height="16" preserveAspectRatio="none"/>
-<text class="rt-moon" x="616" y="258">Європа</text>
+<line class="rt-tie" x1="564" y1="222" x2="564" y2="227"/>
+<image class="rt-body" href="tex/body_europa.png" x="556" y="228" width="16" height="16" preserveAspectRatio="none"/>
+<text class="rt-moon" x="564" y="258">Європа</text>
 </a>
 <a href="#ganymede" class="rt-stop"><title>Ганімед</title>
-<line class="rt-tie" x1="616" y1="262" x2="616" y2="267"/>
-<image class="rt-body" href="tex/body_ganymede.png" x="608" y="268" width="16" height="16" preserveAspectRatio="none"/>
-<text class="rt-moon" x="616" y="298">Ганімед</text>
+<line class="rt-tie" x1="564" y1="262" x2="564" y2="267"/>
+<image class="rt-body" href="tex/body_ganymede.png" x="556" y="268" width="16" height="16" preserveAspectRatio="none"/>
+<text class="rt-moon" x="564" y="298">Ганімед</text>
 </a>
 <a href="#callisto" class="rt-stop"><title>Каллісто</title>
-<line class="rt-tie" x1="616" y1="302" x2="616" y2="307"/>
-<image class="rt-body" href="tex/body_callisto.png" x="608" y="308" width="16" height="16" preserveAspectRatio="none"/>
-<text class="rt-moon" x="616" y="338">Каллісто</text>
+<line class="rt-tie" x1="564" y1="302" x2="564" y2="307"/>
+<image class="rt-body" href="tex/body_callisto.png" x="556" y="308" width="16" height="16" preserveAspectRatio="none"/>
+<text class="rt-moon" x="564" y="338">Каллісто</text>
 </a>
 <a href="#saturn" class="rt-stop"><title>Сатурн</title>
-<image class="rt-body" href="tex/body_saturn_rings.png" x="647.5" y="87.5" width="105" height="105"/>
-<image class="rt-body" href="tex/body_saturn.png" x="675" y="115" width="50" height="50" preserveAspectRatio="none"/>
-<text class="rt-name" x="700" y="86">Сатурн</text>
-<g class="rt-chip t5"><rect x="688" y="92" width="24" height="15"/><text x="700" y="103">T5</text></g>
+<image class="rt-body" href="tex/body_saturn_rings.png" x="617.5" y="87.5" width="105" height="105"/>
+<image class="rt-body" href="tex/body_saturn.png" x="645" y="115" width="50" height="50" preserveAspectRatio="none"/>
+<text class="rt-name" x="670" y="86">Сатурн</text>
+<g class="rt-chip t5"><rect x="658" y="92" width="24" height="15"/><text x="670" y="103">T5</text></g>
 </a>
 <a href="#enceladus" class="rt-stop"><title>Енцелад</title>
-<line class="rt-tie" x1="700" y1="175" x2="700" y2="180"/>
-<image class="rt-body" href="tex/body_enceladus.png" x="692" y="181" width="16" height="16" preserveAspectRatio="none"/>
-<text class="rt-moon" x="700" y="211">Енцелад</text>
+<line class="rt-tie" x1="670" y1="175" x2="670" y2="180"/>
+<image class="rt-body" href="tex/body_enceladus.png" x="662" y="181" width="16" height="16" preserveAspectRatio="none"/>
+<text class="rt-moon" x="670" y="211">Енцелад</text>
 </a>
 <a href="#titan" class="rt-stop"><title>Титан</title>
-<line class="rt-tie" x1="700" y1="215" x2="700" y2="220"/>
-<image class="rt-body" href="tex/body_titan.png" x="692" y="221" width="16" height="16" preserveAspectRatio="none"/>
-<text class="rt-moon" x="700" y="251">Титан</text>
+<line class="rt-tie" x1="670" y1="215" x2="670" y2="220"/>
+<image class="rt-body" href="tex/body_titan.png" x="662" y="221" width="16" height="16" preserveAspectRatio="none"/>
+<text class="rt-moon" x="670" y="251">Титан</text>
 </a>
 <a href="#uranus" class="rt-stop"><title>Уран</title>
-<image class="rt-body" href="tex/body_uranus_rings.png" x="751.7" y="107.7" width="64.6" height="64.6"/>
-<image class="rt-body" href="tex/body_uranus.png" x="765" y="121" width="38" height="38" preserveAspectRatio="none"/>
-<text class="rt-name" x="784" y="86">Уран</text>
-<g class="rt-chip t5"><rect x="772" y="92" width="24" height="15"/><text x="784" y="103">T5</text></g>
+<image class="rt-body" href="tex/body_uranus_rings.png" x="744.7" y="107.7" width="64.6" height="64.6"/>
+<image class="rt-body" href="tex/body_uranus.png" x="758" y="121" width="38" height="38" preserveAspectRatio="none"/>
+<text class="rt-name" x="777" y="86">Уран</text>
+<g class="rt-chip t5"><rect x="765" y="92" width="24" height="15"/><text x="777" y="103">T5</text></g>
 </a>
 <a href="#miranda" class="rt-stop"><title>Міранда</title>
-<line class="rt-tie" x1="784" y1="169" x2="784" y2="174"/>
-<image class="rt-body" href="tex/body_miranda.png" x="776" y="175" width="16" height="16" preserveAspectRatio="none"/>
-<text class="rt-moon" x="784" y="205">Міранда</text>
+<line class="rt-tie" x1="777" y1="169" x2="777" y2="174"/>
+<image class="rt-body" href="tex/body_miranda.png" x="769" y="175" width="16" height="16" preserveAspectRatio="none"/>
+<text class="rt-moon" x="777" y="205">Міранда</text>
 </a>
 <a href="#neptune" class="rt-stop"><title>Нептун</title>
-<image class="rt-body" href="tex/body_neptune.png" x="850" y="122" width="36" height="36" preserveAspectRatio="none"/>
-<text class="rt-name" x="868" y="86">Нептун</text>
-<g class="rt-chip t6"><rect x="856" y="92" width="24" height="15"/><text x="868" y="103">T6</text></g>
+<image class="rt-body" href="tex/body_neptune.png" x="837" y="122" width="36" height="36" preserveAspectRatio="none"/>
+<text class="rt-name" x="855" y="86">Нептун</text>
+<g class="rt-chip t6"><rect x="843" y="92" width="24" height="15"/><text x="855" y="103">T6</text></g>
 </a>
 <a href="#triton" class="rt-stop"><title>Тритон</title>
-<line class="rt-tie" x1="868" y1="168" x2="868" y2="173"/>
-<image class="rt-body" href="tex/body_triton.png" x="860" y="174" width="16" height="16" preserveAspectRatio="none"/>
-<text class="rt-moon" x="868" y="204">Тритон</text>
+<line class="rt-tie" x1="855" y1="168" x2="855" y2="173"/>
+<image class="rt-body" href="tex/body_triton.png" x="847" y="174" width="16" height="16" preserveAspectRatio="none"/>
+<text class="rt-moon" x="855" y="204">Тритон</text>
 </a>
 <a href="#pluto" class="rt-stop"><title>Плутон</title>
-<image class="rt-body" href="tex/body_pluto.png" x="943" y="131" width="18" height="18" preserveAspectRatio="none"/>
-<text class="rt-name" x="952" y="86">Плутон</text>
-<g class="rt-chip t6"><rect x="940" y="92" width="24" height="15"/><text x="952" y="103">T6</text></g>
+<image class="rt-body" href="tex/body_pluto.png" x="916" y="131" width="18" height="18" preserveAspectRatio="none"/>
+<text class="rt-name" x="925" y="86">Плутон</text>
+<g class="rt-chip t6"><rect x="913" y="92" width="24" height="15"/><text x="925" y="103">T6</text></g>
 </a>
 <a href="#kuiper" class="rt-stop"><title>Койпер</title>
-<image class="rt-body" href="tex/body_kuiper.png" x="1020" y="124" width="32" height="32" preserveAspectRatio="none"/>
-<text class="rt-name" x="1036" y="86">Койпер</text>
-<g class="rt-chip t6"><rect x="1024" y="92" width="24" height="15"/><text x="1036" y="103">T6</text></g>
+<image class="rt-body" href="tex/body_kuiper.png" x="979" y="124" width="32" height="32" preserveAspectRatio="none"/>
+<text class="rt-name" x="995" y="86">Койпер</text>
+<g class="rt-chip t6"><rect x="983" y="92" width="24" height="15"/><text x="995" y="103">T6</text></g>
 </a>
 <a href="#haumea" class="rt-stop"><title>Хаумеа</title>
-<image class="rt-body" href="tex/body_haumea.png" x="1111" y="131" width="18" height="18" preserveAspectRatio="none"/>
-<text class="rt-name" x="1120" y="86">Хаумеа</text>
-<g class="rt-chip t6"><rect x="1108" y="92" width="24" height="15"/><text x="1120" y="103">T6</text></g>
+<image class="rt-body" href="tex/body_haumea.png" x="1056" y="131" width="18" height="18" preserveAspectRatio="none"/>
+<text class="rt-name" x="1065" y="86">Хаумеа</text>
+<g class="rt-chip t6"><rect x="1053" y="92" width="24" height="15"/><text x="1065" y="103">T6</text></g>
 </a>
 </svg>
 </div>
