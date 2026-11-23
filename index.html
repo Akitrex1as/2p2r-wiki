@@ -154,8 +154,8 @@ td.n, th.n { font-variant-numeric: tabular-nums; white-space: nowrap; }
 
 /* mods list */
 .modgroup { margin: 18px 0; }
-.modgroup h3 { display: flex; align-items: center; gap: 8px; }
-.modgroup h3 i { width: 10px; height: 10px; border-radius: 50%; background: var(--c); box-shadow: 0 0 8px var(--c); }
+.modgroup h2 { display: flex; align-items: center; gap: 8px; }
+.modgroup h2 i { width: 10px; height: 10px; border-radius: 50%; background: var(--c); box-shadow: 0 0 8px var(--c); }
 .modlist { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 6px 18px; margin: 0; padding: 0; list-style: none; }
 .modlist li { margin: 0; padding: 6px 0; border-bottom: 1px solid color-mix(in srgb, var(--line) 60%, transparent); max-width: none; }
 .modlist b { font-weight: 600; font-size: 14px; }
@@ -2139,7 +2139,7 @@ function infobox(b) {
   const real = Object.entries(b.real || {});
   const rows = r => r.map(([k, v]) => `<tr><th scope="row">${esc(k)}</th><td>${v}</td></tr>`).join("");
   return `<aside class="infobox"><table><caption>${esc(b.name)}</caption>
-    <tr><td colspan="2" class="ib-img">${bodyFigure(b)}<div class="ib-kind">${esc(b.kind)}</div></td></tr>
+    <tr><td colspan="${game.length || real.length ? 2 : 1}" class="ib-img">${bodyFigure(b)}<div class="ib-kind">${esc(b.kind)}</div></td></tr>
     ${game.length ? `<tr><th colspan="2" class="ib-sec">У грі</th></tr>${rows(game)}` : ""}
     ${real.length ? `<tr><th colspan="2" class="ib-sec">У реальності</th></tr>${rows(real.map(([k, v]) => [k, esc(v)]))}` : ""}</table></aside>`;
 }
@@ -2286,7 +2286,7 @@ function renderMods() {
       const list = jars.filter(n => n[key] === g).sort((a, b) => a.name.localeCompare(b.name, "uk"));
       if (!list.length) return;
       const sec = document.createElement("section"); sec.className = "modgroup";
-      sec.innerHTML = `<h3>${esc(title)} · ${list.length}</h3>` + (notes[g] ? `<p class="modnote">${esc(notes[g])}</p>` : "");
+      sec.innerHTML = `<h2>${esc(title)} · ${list.length}</h2>` + (notes[g] ? `<p class="modnote">${esc(notes[g])}</p>` : "");
       const ul = document.createElement("ul"); ul.className = "modlist";
       list.forEach(n => { const li = document.createElement("li"); li.innerHTML = `<b>${esc(n.name)}</b><span>${esc(n.role)}</span>`; ul.append(li); });
       sec.append(ul); body.append(sec);
